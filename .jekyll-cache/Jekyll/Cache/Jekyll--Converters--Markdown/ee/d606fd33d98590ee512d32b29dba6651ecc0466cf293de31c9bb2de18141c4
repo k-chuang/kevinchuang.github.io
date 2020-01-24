@@ -1,0 +1,95 @@
+I"W!<h2>Introduction</h2>
+<p>According to the <a href="http://www.who.int/mediacentre/factsheets/fs369/en/" rel="nofollow">World Health Organization</a>, 350 million people worldwide suffer from depression. Depression is the leading cause of disability.</p>
+<blockquote><p>More than <a class="icon " href="https://adaa.org/understanding-anxiety/depression" target="_new">16 million American adults</a>, or 6.7% of the adult population, have experienced at least one major depressive episode in the last year.</p>
+<p>- Anxiety and Depression Association of America.</p></blockquote>
+<p>Recently, there has been a spike in the rise of suicides in the United States. In the past week, two celebrities (Anthony Bourdain and Kate Spade) committed suicide due to depression. There is a need for more ways that victims of depression can get help. This is the motivation behind why I created Utopia.</p>
+<p><!--more--></p>
+<p>This blog post will be about a project I've been working on for the past couple of months. Using Python, some third party Python packages, and the Alexa Skills kit, I programmed <a href="https://github.com/k-chuang/utopia-alexa-skill" target="_blank" rel="noopener">Utopia</a>, an Alexa skill that is designed to help people cope with depression.</p>
+<p><strong>[UPDATE 06/07/2018]</strong> After a couple iterations with the Alexa Skills team, I am happy to say that Utopia is now live and available in the Alexa Skill store and can be accessed via this link: <a href="https://www.amazon.com/Kevin-Chuang-Utopia/dp/B07CZWS8B2" target="_blank" rel="noopener">Utopia Alexa skill</a> or by simply saying, <code>​​"Alexa, start happy place"</code> to any Alexa supported device.</p>
+<p><strong>Disclaimer</strong>: Utopia is not meant to be a substitute for professional medical advice, treatment or diagnosis. It is more of a supplemental and informational helper to mitigate depression. The person who programmed this are not experts in mental illnesses such as depression, and this is a product of our subjectivity and couple months of research on depression.</p>
+<p>The GitHub Page for this project is located here: <a href="https://k-chuang.github.io/utopia-alexa-skill/" target="_blank" rel="noopener">Utopia GitHub Page</a>.</p>
+<p>The GitHub Repo is located <a href="https://github.com/k-chuang/utopia-alexa-skill/" target="_blank" rel="noopener">here</a>.</p>
+<h2>Description</h2>
+<p>This skill is meant to help people who are going through depression. The main feature of this skill involves taking the <a href="https://www.psychcongress.com/saundras-corner/scales-screeners/depression/hamilton-depression-rating-scale-ham-d" rel="nofollow">Hamilton Depression Rating Scale Survey</a> to get a general idea of the severity of depression, and based on the score of the survey, the skill would recommend certain natural remedies to help. The other complementary features include giving positive and motivational quotes (other types of quotes are also supported), proposing natural solutions, a mindfulness meditation exercise, recommendations for nearby therapists, and, if necessary, getting help from the National Suicide Prevention Lifeline.</p>
+<h2>Architecture</h2>
+<p><img class="alignnone size-full wp-image-184" src="/assets/utopia-alexa-skill-architecture1.png" alt="Utopia-alexa-skill-architecture.png" width="2031" height="445" /></p>
+<h2>Features</h2>
+<ul>
+<li><a href="https://www.psychcongress.com/saundras-corner/scales-screeners/depression/hamilton-depression-rating-scale-ham-d" rel="nofollow">Hamilton Depression Rating Scale Survey</a> consisting of 16 questions to analyze and evaluate level of depression.
+<ul>
+<li>Added three bonus questions that uses <a href="http://www.nltk.org/" rel="nofollow">NLTK</a> sentiment analysis to contribute to the survey score.</li>
+</ul>
+</li>
+<li>Listen to different categories of quotes from <a href="https://www.brainyquote.com/" rel="nofollow">BrainyQuote</a>
+<ul>
+<li>A few popular categories of quotes include positive, motivational, inspirational, family, love, and positive.</li>
+</ul>
+</li>
+<li>Listen to advice and ideas for activities to improve mood
+<ul>
+<li>Examples include:
+<ul>
+<li><em>Listen to music that makes you feel good.</em></li>
+<li><em>Take note of all the small things you've accomplished today.</em></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Listen to a collection of uplifting &amp; powerful poems</li>
+<li>Recommend therapists nearby using <a href="https://developers.google.com/places/" rel="nofollow">Google Places API</a> by providing contact information, current availability, and open hours
+<ul>
+<li>Will find nearby available therapists, and if there are no open therapists nearby, will default to all nearby therapist places (open or closed)</li>
+</ul>
+</li>
+<li><a href="https://suicidepreventionlifeline.org/" rel="nofollow">National Suicide Prevention Lifeline</a>
+<ul>
+<li>If certain trigger words are said, this feature will automatically trigger and provide user with contact information for the suicide hotline.</li>
+<li>For a full list of trigger words, see <a href="https://github.com/k-chuang/utopia-alexa-skill/blob/master/speech_assets/custom_slot_types/TriggerWords.txt">Trigger Words</a></li>
+</ul>
+</li>
+</ul>
+<h2>Usage</h2>
+<p>Different from the skill name, the<em> invocation name</em> is 'happy place'.</p>
+<p>To start using it, say a simple invocation phrase, such as the following listed below:</p>
+<table>
+<thead>
+<tr>
+<th>Starting Phrase</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&lt;invocation name&gt;</td>
+<td>Alexa, happy place</td>
+</tr>
+<tr>
+<td>Launch &lt;invocation name&gt;</td>
+<td>Alexa, Launch happy place</td>
+</tr>
+<tr>
+<td>Open &lt;invocation name&gt;</td>
+<td>Alexa, Open happy place</td>
+</tr>
+<tr>
+<td>Start &lt;invocation name&gt;</td>
+<td>Alexa, Start happy place</td>
+</tr>
+</tbody>
+</table>
+<p>To start and hear the available features, you can say the following:</p>
+<pre><code>Alexa, ask happy place for available features</code></pre>
+<h2>Testing &amp; Code Coverage</h2>
+<p>To run tests and check code coverage, run the following command in the root project folder:</p>
+<div class="highlight highlight-source-shell">
+<pre>  $ pytest tests/test_utopia_unit.py -v —cov utopia —cov-report term-missing</pre>
+</div>
+<p>This command will execute the tests and check for test code coverage of the main program (<a href="https://github.com/k-chuang/utopia-alexa-skill/blob/master/utopia.py">utopia.py</a>), and report which lines were not covered by the test suite (<a href="https://github.com/k-chuang/utopia-alexa-skill/blob/master/tests/test_utopia_unit.py">test_utopia_unit.py</a>).</p>
+<h3>Travis CI  <a href="https://travis-ci.org/k-chuang/utopia-alexa-skill"><img src="/assets/utopia-alexa-skill.svg?branch=master" alt="Build Status" /></a></h3>
+<p>This project uses <a href="https://travis-ci.org/" rel="nofollow">Travis-CI</a>, a hosted, distributed continuous integration service that builds and tests software hosted on GitHub. Every commit that is pushed to a GitHub repo automatically triggers <a href="https://travis-ci.org/" rel="nofollow">Travis CI</a> to run, build and test your software.</p>
+<p>The continuous integration configuration is specified in <a href="https://github.com/k-chuang/utopia-alexa-skill/blob/master/.travis.yml">.travis.yml</a> file, and specifies the programming language used, desired building and testing environments, and various other parameters. For this project, the configuration is set up to create environment variables, install necessary dependencies, run the test suite, and after a successful test run, report code coverage.</p>
+<p><a href="https://travis-ci.org/" rel="nofollow">Travis CI</a> generates a badge with the current build status (displayed above). Click on the badge for more information.</p>
+<h3>Codecov  <a href="https://codecov.io/gh/k-chuang/utopia-alexa-skill"><img src="/assets/badge.svg" alt="codecov" /></a></h3>
+<p>This project uses <a href="https://codecov.io/" rel="nofollow">Codecov</a> to generate code coverage reports. <a href="https://codecov.io/" rel="nofollow">Codecov</a> is a free, open source code coverage reporting tool that integrates seamlessly with GitHub. It calculates and measures code coverage and delivers the coverage metrics in a clear, understandable way. Similar to Travis CI, <a href="https://codecov.io/" rel="nofollow">Codecov</a> also generates a clickable badge (displayed above) with the current code coverage metrics.</p>
+<p>&nbsp;</p>
+:ET

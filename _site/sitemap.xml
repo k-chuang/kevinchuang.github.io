@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+<loc>http://localhost:4000/2018/03/16/first-post/</loc>
+<lastmod>2018-03-16T07:40:19-07:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/2018/03/17/fixed-my-first-bug-this-week/</loc>
+<lastmod>2018-03-17T02:24:31-07:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/2018/04/05/automate-the-menial-tasks-pt-1/</loc>
+<lastmod>2018-04-05T22:03:15-07:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/2018/04/12/automate-the-menial-tasks-pt-2/</loc>
+<lastmod>2018-04-12T17:10:26-07:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/2018/06/05/programming-utopia-an-alexa-skill/</loc>
+<lastmod>2018-06-05T20:33:40-07:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/2019/05/14/update-may-14-2019/</loc>
+<lastmod>2019-05-14T15:44:18-07:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/page2/</loc>
+</url>
+</urlset>

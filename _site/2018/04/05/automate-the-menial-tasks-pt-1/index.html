@@ -1,0 +1,723 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.17.2 by Michael Rose
+  Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Automate the Menial Tasks Pt.1 - Not Enough Data</title>
+<meta name="description" content="These next few blog posts were motivated by Automate the Boring Stuff by Al Sweigart, which I highly recommend reading (I haven’t personally finished the book yet, but it’s one of the first Python books I have read, and has motivated me to work on projects to “automate the boring stuff”).  ">
+
+
+  <meta name="author" content="Kevin Chuang">
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Not Enough Data">
+<meta property="og:title" content="Automate the Menial Tasks Pt.1">
+<meta property="og:url" content="http://localhost:4000/2018/04/05/automate-the-menial-tasks-pt-1/">
+
+
+  <meta property="og:description" content="These next few blog posts were motivated by Automate the Boring Stuff by Al Sweigart, which I highly recommend reading (I haven’t personally finished the book yet, but it’s one of the first Python books I have read, and has motivated me to work on projects to “automate the boring stuff”).  ">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2018-04-05T22:03:15-07:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/2018/04/05/automate-the-menial-tasks-pt-1/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Kevin Chuang",
+      "url": "http://localhost:4000/",
+      "sameAs": ["https://www.linkedin.com/in/kevin-chuang/","https://github.com/k-chuang","https://www.youtube.com/channel/UCumYWKxbe3sUZ6VkMNWcEuA"]
+    
+  }
+</script>
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Not Enough Data Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<!--[if IE]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          Not Enough Data
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="https://mmistakes.github.io/minimal-mistakes/about/" >About</a>
+            </li><li class="masthead__menu-item">
+              <a href="/categories/" >Categories</a>
+            </li><li class="masthead__menu-item">
+              <a href="/tags/" >Tags</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.99 16">
+            <path d="M15.5,13.12L13.19,10.8a1.69,1.69,0,0,0-1.28-.55l-0.06-.06A6.5,6.5,0,0,0,5.77,0,6.5,6.5,0,0,0,2.46,11.59a6.47,6.47,0,0,0,7.74.26l0.05,0.05a1.65,1.65,0,0,0,.5,1.24l2.38,2.38A1.68,1.68,0,0,0,15.5,13.12ZM6.4,2A4.41,4.41,0,1,1,2,6.4,4.43,4.43,0,0,1,6.4,2Z" transform="translate(-.01)"></path>
+          </svg>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+  
+    
+
+
+
+<nav class="breadcrumbs">
+  <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+    
+    
+    
+      
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="http://localhost:4000/" itemprop="item"><span itemprop="name">Home</span></a>
+          <meta itemprop="position" content="1" />
+        </li>
+        <span class="sep">/</span>
+      
+      
+        
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/categories/#2018" itemprop="item"><span itemprop="name">2018</span></a>
+          <meta itemprop="position" content="2" />
+        </li>
+        <span class="sep">/</span>
+      
+    
+      
+      
+        
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/categories/#04" itemprop="item"><span itemprop="name">04</span></a>
+          <meta itemprop="position" content="3" />
+        </li>
+        <span class="sep">/</span>
+      
+    
+      
+      
+        
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/categories/#05" itemprop="item"><span itemprop="name">05</span></a>
+          <meta itemprop="position" content="4" />
+        </li>
+        <span class="sep">/</span>
+      
+    
+      
+      
+        <li class="current">Automate the Menial Tasks Pt.1</li>
+      
+    
+  </ol>
+</nav>
+
+  
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+
+      
+        <img src="/assets/images/ME.jpg" alt="Kevin Chuang" itemprop="image">
+      
+    </div>
+  
+
+  <div class="author__content">
+    
+      <h3 class="author__name" itemprop="name">Kevin Chuang</h3>
+    
+    
+      <div class="author__bio" itemprop="description">
+        <p>Machine Learning Engineer @ CBS Interactive. Avid programmer, Aspiring Data Scientist, and AI Enthusiast.</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name">San Jose, California</span>
+        </li>
+      
+
+      
+        
+          
+            <li><a href="https://github.com/k-chuang" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+          
+        
+          
+            <li><a href="https://www.linkedin.com/in/kevin-chuang/" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+          
+        
+          
+            <li><a href="https://www.youtube.com/channel/UCumYWKxbe3sUZ6VkMNWcEuA" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-youtube" aria-hidden="true"></i> Youtube</a></li>
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Automate the Menial Tasks Pt.1">
+    <meta itemprop="description" content="These next few blog posts were motivated by Automate the Boring Stuff by Al Sweigart, which I highly recommend reading (I haven’t personally finished the book yet, but it’s one of the first Python books I have read, and has motivated me to work on projects to “automate the boring stuff”).">
+    <meta itemprop="datePublished" content="2018-04-05T22:03:15-07:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Automate the Menial Tasks Pt.1
+</h1>
+          
+            <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  6 minute read
+
+</p>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <p>These next few blog posts were motivated by <a href="https://automatetheboringstuff.com/">Automate the Boring Stuff</a> by Al Sweigart, which I highly recommend reading (I haven’t personally finished the book yet, but it’s one of the first Python books I have read, and has motivated me to work on projects to “automate the boring stuff”).</p>
+
+<p>In this post, I will be talking about how to implement a Python Outlook Emailer bot in a Windows 7 environment to automate emailing subjects/volunteers using some cool Python libraries and techniques, and Google sheets.</p>
+
+<p>The GitHub repo for this application will be located here: <a href="https://github.com/k-chuang/automate-menial-tasks/blob/master/automate-outlook-emailer.py">Python Outlook Emailer</a></p>
+
+<h2 id="python-libraries-used">Python libraries used:</h2>
+
+<ul>
+  <li><a href="https://github.com/mhammond/pywin32">pypiwin32</a> - a Python library for Windows 32 extensions, which allows access to Windows API (used to interact with Microsoft Outlook)</li>
+  <li><a href="https://pypi.python.org/pypi/gsheets/0.3">gsheets</a> - a Python wrapper around the Google Sheets API</li>
+  <li><a href="https://pandas.pydata.org/">pandas</a> - a super awesome library that makes working with data easy. It’s good for data manipulation and data analysis, and also creating easy to use data structures.</li>
+  <li><a href="https://docs.python.org/2/library/re.html">re</a> - a Python library for regular expressions</li>
+  <li><a href="https://docs.python.org/2/library/threading.html">threading</a> - a Python library for threading</li>
+</ul>
+
+<h2 id="setting-up">Setting up</h2>
+
+<p>Python 2.7 was used, and the Python libraries and their versions are located in the requirements.txt file.</p>
+
+<p>To install the necessary Python packages, run:</p>
+
+<p><code class="highlighter-rouge">pip install -r requirements.txt</code></p>
+
+<p>I found a nice Python library called <strong><a href="https://github.com/bndr/pipreqs">pipreqs</a></strong> that automatically generates the requirements.txt file based on imports. You just run this simple command in your terminal:</p>
+
+<p><code class="highlighter-rouge">pipreqs /path/to/project</code></p>
+
+<p>I should have used a virtual environment (either <strong><a href="https://virtualenv.pypa.io/en/stable/">virtualenv</a> </strong>or <strong><a href="https://docs.pipenv.org/">pipenv</a></strong>) to set up the requirements.txt file for the required Python libraries, but this project was created before I knew about these concepts. However, I am definitely looking into using these tools to create an isolated Python environment for future projects.</p>
+
+<p>Since we are using a Google form and a couple Google sheets, you will need an account on Google to create these forms and sheets. In addition, since we are using the Google Sheets API, you will need to visit the <a href="https://console.developers.google.com">Google Developer Console</a> to generate the <strong>clients_secrets.json</strong> and <strong>storage.json</strong> file for authentication purposes. The <a href="https://gsheets.readthedocs.io/en/stable/">documentation for gsheets</a> has an easy to understand way of setting this up (it’s under <strong>Quickstart</strong> ). This step in authentication is necessary in order to use the Google Sheet API.</p>
+
+<p>The Google form should have this format: <a href="https://docs.google.com/forms/d/e/1FAIpQLScNaQrv1L-JAC6RaLAVSrXbhiiTcvTHM-q-zvUeWotelriUxA/viewform?usp=sf_link">https://docs.google.com/forms/d/e/1FAIpQLScNaQrv1L-JAC6RaLAVSrXbhiiTcvTHM-q-zvUeWotelriUxA/viewform?usp=sf_link</a></p>
+
+<p>The Google sheets that the script will prompt for should be as follows:</p>
+
+<p><strong>Mailing list</strong> : a Google sheet that contains a database of emails and user information that are on the mailing list. IMPORTANT: the 2nd column should be a column of emails.</p>
+
+<p><strong>Blacklisted emails</strong> : a Google sheet with just one column of emails and nothing else. These are the emails you do not wish to email, and the script will take the necessary precautions to filter out these emails.</p>
+
+<h2 id="how-it-works">How it works</h2>
+
+<p>To avoid making this a long, convoluted step by step guide, I will just give a high level overview of how the script works, and a couple cool features within the script.</p>
+
+<p>The Python script is an automated emailer that is meant to sign subjects up for an appointment to come in a fill out a survey. After users have filled out the survey, the Python script can be run again to send them a confirmation email with their appropriate appointment time and date. There are essentially two main steps to this script that happen sequentially. These steps do not necessarily have to be run sequentially. For example, if you already sent out the Google Form to people via some form of social media or ad posting, and have a filled out Google Sheet response to the form, then you can skip the first step.</p>
+
+<p><strong>First step:</strong>  To start, there is an <em>initial email</em>, which emails subjects that are in a mailing list. The email will ask them if they are interested in participating in a survey, and if they are, to sign up for a time slot via a Google Form (Google Form format is located above). When running the script, the prompt will ask you whether or not you are emailing the mailing list (with input “i”), or confirming an email (with input “c”). You would want to type in the letter i to initiate the first step.</p>
+
+<p>The script will then prompt you for other information, such as the url to the Google sheet containing the blacklist (if any), and the url to the Google sheet containing the mailing list. After you have successfully entered these two urls, the script will then prompt you to check the formatting of the email, and if you are satisfied with it. This is mainly to make sure the html body of the email is formatted correctly.</p>
+
+<p>See <a href="https://github.com/k-chuang/automate-menial-tasks/blob/master/html/initial_email.html">initial_email.html</a> for the correct formatting of the email body.</p>
+
+<p>After you confirm that the email body is formatted correctly, the script will then prompt you again, and ask if you want to instantly send all emails, or oversee the sending of emails. Overseeing the emails will show you each email being sent with some time (5 seconds) in between sending each email. I recommend running in the oversee mode until you are familiar with the script.</p>
+
+<p>All of the emails you have already sent will be recorded into the <em>already_emailed.txt</em> file to prevent from emailing them again.</p>
+
+<p>A cool feature that was implemented was a daemon thread function that will stop the sending of emails if you press any key. This threading function is a daemon thread that works in the background of the Python program, and is triggered by a user input of any key which then triggers the setting of a boolean flag. Based on the status of this flag (True or False), the program will stop and exit gracefully. Caveat: This only works in the overseeing mode.</p>
+
+<p><strong>Second step: </strong> After some time or after you are satisfied with the number of subjects that have signed up for a time slot via the Google Form, the responses will be located in a Google Sheet with the correct format. Run the script again, and instead of inputting a letter i, type in the letter c, which means that you are sending a confirmation email to the subjects.</p>
+
+<p>The script will prompt you for the url to the Google sheet to the blacklist again, to make sure you are not emailing people who have signed up for a time slot, and who are also on the blacklist of emails.</p>
+
+<p>You will need a confirmation email template (<a href="https://github.com/k-chuang/automate-menial-tasks/blob/master/html/confirmation_email_template.html">confirmation_email_template.html</a>), which will generate a confirmation email html body by replacing [DATE] and [TIME] with the associated date and time of a particular participant’s appointment. An example is shown in <a href="https://github.com/k-chuang/automate-menial-tasks/blob/master/html/confirmation_email.html">confirmation_email.html</a>.</p>
+
+<p>The emailer will then start sending emails in oversee mode, similar to the first step.</p>
+
+<p>Again, like in the first step, you can stop the program by pressing any key, which will trigger the daemon thread to properly stop the program.</p>
+
+<p>The person who runs the script should make sure to keep track of what users have been confirmed, by inserting a new column (called Emailed) in the Google Sheet Responses, to make sure they are not sending confirmation emails to people who have already been confirmed. Every batch of emails sent, you should mark an ‘x’ in each respective row to indicate that the subject has been emailed.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>You are done!</p>
+
+<p>This was a very high level overview of how the script works, but hopefully you guys have learned something from it. I do admit that there is a lot of setting up to do and the script could definitely be more automated. However, this does save a lot of time, effort, and manual labor in scheduling people by automating sending emails to a massive list of subjects.</p>
+
+<p>Again, the GitHub repo for this application is located here: <a href="https://github.com/k-chuang/automate-menial-tasks/blob/master/automate-outlook-emailer.py">Python Outlook Emailer</a></p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/tags/#outlook-emailer" class="page__taxonomy-item" rel="tag">Outlook Emailer</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#python" class="page__taxonomy-item" rel="tag">Python</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/categories/#automation" class="page__taxonomy-item" rel="tag">Automation</a>
+    
+    </span>
+  </p>
+
+
+        
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2018-04-05T22:03:15-07:00">April 5, 2018</time></p>
+        
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">Share on</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=Automate+the+Menial+Tasks+Pt.1%20http%3A%2F%2Flocalhost%3A4000%2F2018%2F04%2F05%2Fautomate-the-menial-tasks-pt-1%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F2018%2F04%2F05%2Fautomate-the-menial-tasks-pt-1%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2F2018%2F04%2F05%2Fautomate-the-menial-tasks-pt-1%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/2018/03/17/fixed-my-first-bug-this-week/" class="pagination--pager" title="Fixed my first bug this week~
+">Previous</a>
+    
+    
+      <a href="/2018/04/12/automate-the-menial-tasks-pt-2/" class="pagination--pager" title="Automate the Menial Tasks Pt.2
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">You may also enjoy</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/2019/05/14/update-may-14-2019/" rel="permalink">Update - May 14, 2019
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">I haven’t posted in a while due to being busy with work and school. Here are some updates!
+
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/2018/06/05/programming-utopia-an-alexa-skill/" rel="permalink">Programming Utopia, an Alexa skill
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  4 minute read
+
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">According to the World Health Organization, 350 million people worldwide suffer from depression. Depression is the leading cause of disability.
+
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/2018/04/12/automate-the-menial-tasks-pt-2/" rel="permalink">Automate the Menial Tasks Pt.2
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  4 minute read
+
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">This is part 2 (and the final part) of the automating the menial tasks mini-series. I will be talking about using Python and Selenium to automate downloading...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/2018/03/17/fixed-my-first-bug-this-week/" rel="permalink">Fixed my first bug this week~
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  2 minute read
+
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">I fixed my first software-related bug at work this week! Super proud of myself, and this blog post is dedicated to kind of how I did it using what I learned ...</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+          <li><a href="https://github.com/k-chuang" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+          <li><a href="https://www.linkedin.com/in/kevin-chuang/" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+        
+      
+        
+          <li><a href="https://www.youtube.com/channel/UCumYWKxbe3sUZ6VkMNWcEuA" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-youtube" aria-hidden="true"></i> Youtube</a></li>
+        
+      
+    
+
+    <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2020 Kevin Chuang. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+  <script src="https://kit.fontawesome.com/4eee35f757.js"></script>
+
+
+
+
+<script src="/assets/js/lunr/lunr.min.js"></script>
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+
+
+
+  </body>
+</html>

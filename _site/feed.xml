@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-01-24T15:32:18-08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Not Enough Data</title><subtitle>Machine Learning Engineer @ CBS Interactive. Avid programmer, Aspiring Data Scientist, and AI Enthusiast. This website will contain my resume / CV as well as blog about my journey into software engineering, data science, and machine learning.</subtitle><author><name>Kevin Chuang</name></author><entry><title type="html">Update - May 14, 2019</title><link href="http://localhost:4000/2019/05/14/update-may-14-2019/" rel="alternate" type="text/html" title="Update - May 14, 2019" /><published>2019-05-14T15:44:18-07:00</published><updated>2019-05-14T15:44:18-07:00</updated><id>http://localhost:4000/2019/05/14/update-may-14-2019</id><content type="html" xml:base="http://localhost:4000/2019/05/14/update-may-14-2019/">&lt;p&gt;I haven’t posted in a while due to being busy with work and school. Here are some updates!&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;I have added a new page on this blog for my resume. It is located here: &lt;a href=&quot;https://kevinchuangblog.wordpress.com/resume-cv/&quot;&gt;Resume / CV&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;I have left my current job and have a Data Science internship for the summer of 2019! I will be working as a data science intern at CBS Interactive in the Applied Machine Learning Group! I am super excited and extremely grateful for this opportunity. So thank you to CBS Interactive and the Applied Machine Learning Group :)&lt;/li&gt;
+  &lt;li&gt;I have been working on a deep learning/ computer vision project for vehicle re-identification for &lt;a href=&quot;https://www.aicitychallenge.org/&quot;&gt;NVIDIA’s AI City Challenge 2019&lt;/a&gt;. I may include a blog post about this project in the near future.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!-- /wp:list --&gt;
+
+&lt;!-- wp:paragraph --&gt;
+
+&lt;!-- /wp:paragraph --&gt;
+
+&lt;!-- wp:paragraph --&gt;
+
+&lt;!-- /wp:paragraph --&gt;</content><author><name>Kevin Chuang</name></author><summary type="html">I haven’t posted in a while due to being busy with work and school. Here are some updates!</summary></entry><entry><title type="html">Programming Utopia, an Alexa skill</title><link href="http://localhost:4000/2018/06/05/programming-utopia-an-alexa-skill/" rel="alternate" type="text/html" title="Programming Utopia, an Alexa skill" /><published>2018-06-05T20:33:40-07:00</published><updated>2018-06-05T20:33:40-07:00</updated><id>http://localhost:4000/2018/06/05/programming-utopia-an-alexa-skill</id><content type="html" xml:base="http://localhost:4000/2018/06/05/programming-utopia-an-alexa-skill/">&lt;p&gt;According to the &lt;a href=&quot;http://www.who.int/mediacentre/factsheets/fs369/en/&quot;&gt;World Health Organization&lt;/a&gt;, 350 million people worldwide suffer from depression. Depression is the leading cause of disability.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;More than &lt;a href=&quot;https://adaa.org/understanding-anxiety/depression&quot;&gt;16 million American adults&lt;/a&gt;, or 6.7% of the adult population, have experienced at least one major depressive episode in the last year.&lt;/p&gt;
+
+  &lt;ul&gt;
+    &lt;li&gt;Anxiety and Depression Association of America.&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Recently, there has been a spike in the rise of suicides in the United States. In the past week, two celebrities (Anthony Bourdain and Kate Spade) committed suicide due to depression. There is a need for more ways that victims of depression can get help. This is the motivation behind why I created Utopia.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;This blog post will be about a project I’ve been working on for the past couple of months. Using Python, some third party Python packages, and the Alexa Skills kit, I programmed &lt;a href=&quot;https://github.com/k-chuang/utopia-alexa-skill&quot;&gt;Utopia&lt;/a&gt;, an Alexa skill that is designed to help people cope with depression.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;[UPDATE 06/07/2018]&lt;/strong&gt; After a couple iterations with the Alexa Skills team, I am happy to say that Utopia is now live and available in the Alexa Skill store and can be accessed via this link: &lt;a href=&quot;https://www.amazon.com/Kevin-Chuang-Utopia/dp/B07CZWS8B2&quot;&gt;Utopia Alexa skill&lt;/a&gt; or by simply saying, &lt;code class=&quot;highlighter-rouge&quot;&gt;​​&quot;Alexa, start happy place&quot;&lt;/code&gt; to any Alexa supported device.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Disclaimer&lt;/strong&gt; : Utopia is not meant to be a substitute for professional medical advice, treatment or diagnosis. It is more of a supplemental and informational helper to mitigate depression. The person who programmed this are not experts in mental illnesses such as depression, and this is a product of our subjectivity and couple months of research on depression.&lt;/p&gt;
+
+&lt;p&gt;The GitHub Page for this project is located here: &lt;a href=&quot;https://k-chuang.github.io/utopia-alexa-skill/&quot;&gt;Utopia GitHub Page&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The GitHub Repo is located &lt;a href=&quot;https://github.com/k-chuang/utopia-alexa-skill/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;description&quot;&gt;Description&lt;/h2&gt;
+
+&lt;p&gt;This skill is meant to help people who are going through depression. The main feature of this skill involves taking the &lt;a href=&quot;https://www.psychcongress.com/saundras-corner/scales-screeners/depression/hamilton-depression-rating-scale-ham-d&quot;&gt;Hamilton Depression Rating Scale Survey&lt;/a&gt; to get a general idea of the severity of depression, and based on the score of the survey, the skill would recommend certain natural remedies to help. The other complementary features include giving positive and motivational quotes (other types of quotes are also supported), proposing natural solutions, a mindfulness meditation exercise, recommendations for nearby therapists, and, if necessary, getting help from the National Suicide Prevention Lifeline.&lt;/p&gt;
+
+&lt;h2 id=&quot;architecture&quot;&gt;Architecture&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/utopia-alexa-skill-architecture1.png&quot; alt=&quot;Utopia-alexa-skill-architecture.png&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;features&quot;&gt;Features&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.psychcongress.com/saundras-corner/scales-screeners/depression/hamilton-depression-rating-scale-ham-d&quot;&gt;Hamilton Depression Rating Scale Survey&lt;/a&gt; consisting of 16 questions to analyze and evaluate level of depression.
+    &lt;ul&gt;
+      &lt;li&gt;Added three bonus questions that uses &lt;a href=&quot;http://www.nltk.org/&quot;&gt;NLTK&lt;/a&gt; sentiment analysis to contribute to the survey score.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Listen to different categories of quotes from &lt;a href=&quot;https://www.brainyquote.com/&quot;&gt;BrainyQuote&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;A few popular categories of quotes include positive, motivational, inspirational, family, love, and positive.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Listen to advice and ideas for activities to improve mood
+    &lt;ul&gt;
+      &lt;li&gt;Examples include:
+        &lt;ul&gt;
+          &lt;li&gt;&lt;em&gt;Listen to music that makes you feel good.&lt;/em&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;em&gt;Take note of all the small things you’ve accomplished today.&lt;/em&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Listen to a collection of uplifting &amp;amp; powerful poems&lt;/li&gt;
+  &lt;li&gt;Recommend therapists nearby using &lt;a href=&quot;https://developers.google.com/places/&quot;&gt;Google Places API&lt;/a&gt; by providing contact information, current availability, and open hours
+    &lt;ul&gt;
+      &lt;li&gt;Will find nearby available therapists, and if there are no open therapists nearby, will default to all nearby therapist places (open or closed)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://suicidepreventionlifeline.org/&quot;&gt;National Suicide Prevention Lifeline&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;If certain trigger words are said, this feature will automatically trigger and provide user with contact information for the suicide hotline.&lt;/li&gt;
+      &lt;li&gt;For a full list of trigger words, see &lt;a href=&quot;https://github.com/k-chuang/utopia-alexa-skill/blob/master/speech_assets/custom_slot_types/TriggerWords.txt&quot;&gt;Trigger Words&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;usage&quot;&gt;Usage&lt;/h2&gt;
+
+&lt;p&gt;Different from the skill name, the &lt;em&gt;invocation name&lt;/em&gt; is ‘happy place’.&lt;/p&gt;
+
+&lt;p&gt;To start using it, say a simple invocation phrase, such as the following listed below:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Starting Phrase&lt;/th&gt;
+      &lt;th&gt;Example&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&amp;lt;invocation name&amp;gt;&lt;/td&gt;
+      &lt;td&gt;Alexa, happy place&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Launch &amp;lt;invocation name&amp;gt;&lt;/td&gt;
+      &lt;td&gt;Alexa, Launch happy place&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Open &amp;lt;invocation name&amp;gt;&lt;/td&gt;
+      &lt;td&gt;Alexa, Open happy place&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Start &amp;lt;invocation name&amp;gt;&lt;/td&gt;
+      &lt;td&gt;Alexa, Start happy place&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;To start and hear the available features, you can say the following:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Alexa, ask happy place for available features
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;testing--code-coverage&quot;&gt;Testing &amp;amp; Code Coverage&lt;/h2&gt;
+
+&lt;p&gt;To run tests and check code coverage, run the following command in the root project folder:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-source&quot;&gt;$ pytest tests/test\_utopia\_unit.py -v —cov utopia —cov-report term-missing
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This command will execute the tests and check for test code coverage of the main program (&lt;a href=&quot;https://github.com/k-chuang/utopia-alexa-skill/blob/master/utopia.py&quot;&gt;utopia.py&lt;/a&gt;), and report which lines were not covered by the test suite (&lt;a href=&quot;https://github.com/k-chuang/utopia-alexa-skill/blob/master/tests/test_utopia_unit.py&quot;&gt;test_utopia_unit.py&lt;/a&gt;).&lt;/p&gt;
+
+&lt;h3 id=&quot;travis-ci-&quot;&gt;Travis CI  &lt;a href=&quot;https://travis-ci.org/k-chuang/utopia-alexa-skill&quot;&gt;&lt;img src=&quot;/assets/utopia-alexa-skill.svg?branch=master&quot; alt=&quot;Build Status&quot; /&gt;&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;This project uses &lt;a href=&quot;https://travis-ci.org/&quot;&gt;Travis-CI&lt;/a&gt;, a hosted, distributed continuous integration service that builds and tests software hosted on GitHub. Every commit that is pushed to a GitHub repo automatically triggers &lt;a href=&quot;https://travis-ci.org/&quot;&gt;Travis CI&lt;/a&gt; to run, build and test your software.&lt;/p&gt;
+
+&lt;p&gt;The continuous integration configuration is specified in &lt;a href=&quot;https://github.com/k-chuang/utopia-alexa-skill/blob/master/.travis.yml&quot;&gt;.travis.yml&lt;/a&gt; file, and specifies the programming language used, desired building and testing environments, and various other parameters. For this project, the configuration is set up to create environment variables, install necessary dependencies, run the test suite, and after a successful test run, report code coverage.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://travis-ci.org/&quot;&gt;Travis CI&lt;/a&gt; generates a badge with the current build status (displayed above). Click on the badge for more information.&lt;/p&gt;
+
+&lt;h3 id=&quot;codecov-&quot;&gt;Codecov  &lt;a href=&quot;https://codecov.io/gh/k-chuang/utopia-alexa-skill&quot;&gt;&lt;img src=&quot;/assets/badge.svg&quot; alt=&quot;codecov&quot; /&gt;&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;This project uses &lt;a href=&quot;https://codecov.io/&quot;&gt;Codecov&lt;/a&gt; to generate code coverage reports. &lt;a href=&quot;https://codecov.io/&quot;&gt;Codecov&lt;/a&gt; is a free, open source code coverage reporting tool that integrates seamlessly with GitHub. It calculates and measures code coverage and delivers the coverage metrics in a clear, understandable way. Similar to Travis CI, &lt;a href=&quot;https://codecov.io/&quot;&gt;Codecov&lt;/a&gt; also generates a clickable badge (displayed above) with the current code coverage metrics.&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;</content><author><name>Kevin Chuang</name></author><category term="Alexa" /><category term="Codecov" /><category term="Python" /><category term="Travis CI" /><category term="Utopia" /><summary type="html">According to the World Health Organization, 350 million people worldwide suffer from depression. Depression is the leading cause of disability.</summary></entry><entry><title type="html">Automate the Menial Tasks Pt.2</title><link href="http://localhost:4000/2018/04/12/automate-the-menial-tasks-pt-2/" rel="alternate" type="text/html" title="Automate the Menial Tasks Pt.2" /><published>2018-04-12T17:10:26-07:00</published><updated>2018-04-12T17:10:26-07:00</updated><id>http://localhost:4000/2018/04/12/automate-the-menial-tasks-pt-2</id><content type="html" xml:base="http://localhost:4000/2018/04/12/automate-the-menial-tasks-pt-2/">&lt;p&gt;This is part 2 (and the final part) of the automating the menial tasks mini-series. I will be talking about using Python and Selenium to automate downloading audio files from a free audio database called &lt;a href=&quot;https://freesound.org/&quot;&gt;Freesound&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;This was an old project that I had worked on when I was first getting into programming in Python. Recently, I revisited the code, since I remember it being such a cool and exciting project. I wanted to make it even better, so I spent some time refactoring the old, messy, and unPythonic code into a more understandable, clean CLI (Command Line Interface) application.&lt;/p&gt;
+
+&lt;p&gt;In addition to refactoring the code, I also started writing some unit tests and test cases to test the newly refactored code and the application as a whole. It was my first time writing unit tests and test cases for testing code, and it was such an awesome and fulfilling experience! I learned about a bunch of cool Python test frameworks and libraries (&lt;a href=&quot;https://docs.pytest.org/en/latest/&quot;&gt;pytest&lt;/a&gt;, &lt;a href=&quot;https://pytest-cov.readthedocs.io/en/latest/&quot;&gt;pytest-cov&lt;/a&gt;, &lt;a href=&quot;https://docs.python.org/2/library/unittest.html&quot;&gt;unittest&lt;/a&gt;), an open source, hosted continuous integration service called &lt;a href=&quot;http://travis-ci.org&quot;&gt;travis-ci&lt;/a&gt;, and a coverage statistic web service that publishes and tracks your code coverage stats online called &lt;a href=&quot;http://coveralls.io&quot;&gt;coveralls.io&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Both &lt;strong&gt;travis-ci&lt;/strong&gt; and &lt;strong&gt;coveralls.io&lt;/strong&gt; sync with GitHub, so every commit to a GitHub repo will trigger a new build, and generate updated code coverage stats. Also, these two services  both provide a nice dynamic badge icon that represents the status of your current build ( &lt;strong&gt;travis-ci&lt;/strong&gt; ) or displays the current percentage of code coverage ( &lt;strong&gt;coveralls.io&lt;/strong&gt; ).&lt;/p&gt;
+
+&lt;p&gt;The two dynamic and clickable icons that are on my GitHub are located here. Click them if you are interested in seeing the up-to-date details and status of my build on travis-ci and the code coverage stats on coverage.io:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://travis-ci.org/k-chuang/automate-download-freesound&quot;&gt;&lt;img src=&quot;/assets/automate-download-freesound.svg?branch=master&quot; alt=&quot;Build Status&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://coveralls.io/github/k-chuang/automate-download-freesound?branch=master&quot;&gt;&lt;img src=&quot;/assets/badge.svg?branch=master&quot; alt=&quot;Coverage Status&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The Python code for this project can be found on my GitHub along with the cool badge icons shown above, courtesy of &lt;strong&gt;travis-ci&lt;/strong&gt; and &lt;strong&gt;coveralls.io&lt;/strong&gt; :&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/k-chuang/automate-download-freesound&quot;&gt;Freesound Downloader&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;setting-up&quot;&gt;Setting Up&lt;/h2&gt;
+
+&lt;p&gt;Install chromedriver via brew or from the &lt;a href=&quot;https://sites.google.com/a/chromium.org/chromedriver/downloads&quot;&gt;Google site&lt;/a&gt;, and set the location of the chromedriver on your SYSTEM PATH.&lt;/p&gt;
+
+&lt;p&gt;I installed the chromedriver via &lt;a href=&quot;https://brew.sh/&quot;&gt;brew&lt;/a&gt; (command is below), and naturally, brew installs packages to /usr/local/bin, which is already in the $PATH, so that is pretty convenient. You can always do an echo $PATH to make sure that /usr/local/bin is in it, and if it’s not in your $PATH variable, then export it by editing either ~/.bash_profile or /etc/paths/.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ brew install chromedriver
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;After installing the chromedriver, here is rest of the setup:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git clone https://github.com/k-chuang/automate-download-freesound.git
+$ cd automate-download-freesound
+$ virtualenv -p /usr/bin/python2.7 venv
+$ source venv/bin/activate
+$ pip install -r dev-requirements.txt
+$ pytest
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Also, you will need to create a free account on &lt;a href=&quot;http://freesound.org&quot;&gt;Freesound&lt;/a&gt; in order to download files.&lt;/p&gt;
+
+&lt;h2 id=&quot;how-to-use&quot;&gt;How to Use&lt;/h2&gt;
+
+&lt;p&gt;Run the command below for more information regarding the arguments (positional or optional, default values, description, etc.)&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ python automate_download_freesound.py --help
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;There is one required argument, and that is the desired sounds you wish to download from &lt;a href=&quot;http://freesound.org/&quot;&gt;Freesound&lt;/a&gt;. You may list more than one sound, but make sure to separate each one by commas, and if the sound you want to download includes spaces, please put quotation marks around it to ensure a smooth experience. Also, make sure it is the first argument after the script. Example:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ python automate_download_freesound.py &quot;dogs barking,cats purring&quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;There are more features and arguments, including download path, file format, sample rate, and advanced filtering. These are all optional arguments, and can help with filtering for your specific needs.&lt;/p&gt;
+
+&lt;p&gt;Here is another example, where all the optional arguments are specified:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ python automate_download_freesound.py &quot;baby crying,smoke alarm&quot; --download-dir /Users/KevinChuang/Desktop --file-format wav --sample-rate 48000 --advanced-filter True
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;This command will download ‘baby crying’ and ‘smoke alarm’ wav files with a sampling rate of 48000 from &lt;a href=&quot;http://freesound.org&quot;&gt;Freesound.org&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Here are brief descriptions of each of the arguments, and some sample parameters:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Argument&lt;/th&gt;
+      &lt;th&gt;Type&lt;/th&gt;
+      &lt;th&gt;Description&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;sound&lt;/td&gt;
+      &lt;td&gt;required&lt;/td&gt;
+      &lt;td&gt;a list of sounds (or just one sound) separated by commas (if multiple), and enclosed in parenthesis&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;––download-dir&lt;/td&gt;
+      &lt;td&gt;optional&lt;/td&gt;
+      &lt;td&gt;a string literal with a path to the download folder you wish to download files to. The default value for this argument is your respective ‘Downloads’ folder. This works for both MacOS and Windows environment.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;––file-format&lt;/td&gt;
+      &lt;td&gt;optional&lt;/td&gt;
+      &lt;td&gt;a string literal with the desired audio file format extension of the downloaded files. Default will be all available audio file formats with no filtering. Choices include wav, ogg, mp3, m4a, aiff, and flac.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;––sample-rate&lt;/td&gt;
+      &lt;td&gt;optional&lt;/td&gt;
+      &lt;td&gt;a integer with the desired sample rate of the downloaded files. Default will be all available sample rates with no filtering. Choices include 11025, 16000, 22050, 44100, 48000, 88200, and 96000.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;––advanced-filter&lt;/td&gt;
+      &lt;td&gt;optional&lt;/td&gt;
+      &lt;td&gt;a boolean value (True or False) that initiates advanced filtering to limit audio files based on search query. The advanced filter will limit the audio files based on the search query found in tags, filenames, and file descriptions.&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;Thus concludes the “Automate the Menial Tasks” mini series. I had a lot of fun working on this old project, and I learned a lot from refactoring it, like how to write sophisticated and complete tests for Python applications. I want to give one last shout out to the two open source and easy to use services that I used in this project: &lt;a href=&quot;http://travis-ci.org&quot;&gt;travis-ci&lt;/a&gt; &amp;amp; &lt;a href=&quot;http://coveralls.io&quot;&gt;coveralls.io&lt;/a&gt;. I highly recommend checking those two services out.&lt;/p&gt;
+
+&lt;p&gt;Again, you can check out my GitHub repo of this project here: &lt;a href=&quot;https://github.com/k-chuang/automate-download-freesound&quot;&gt;Freesound Downloader&lt;/a&gt;&lt;/p&gt;</content><author><name>Kevin Chuang</name></author><category term="CLI" /><category term="Coveralls" /><category term="Python" /><category term="Selenium" /><category term="Travis CI" /><summary type="html">This is part 2 (and the final part) of the automating the menial tasks mini-series. I will be talking about using Python and Selenium to automate downloading audio files from a free audio database called Freesound.</summary></entry><entry><title type="html">Automate the Menial Tasks Pt.1</title><link href="http://localhost:4000/2018/04/05/automate-the-menial-tasks-pt-1/" rel="alternate" type="text/html" title="Automate the Menial Tasks Pt.1" /><published>2018-04-05T22:03:15-07:00</published><updated>2018-04-05T22:03:15-07:00</updated><id>http://localhost:4000/2018/04/05/automate-the-menial-tasks-pt-1</id><content type="html" xml:base="http://localhost:4000/2018/04/05/automate-the-menial-tasks-pt-1/">&lt;p&gt;These next few blog posts were motivated by &lt;a href=&quot;https://automatetheboringstuff.com/&quot;&gt;Automate the Boring Stuff&lt;/a&gt; by Al Sweigart, which I highly recommend reading (I haven’t personally finished the book yet, but it’s one of the first Python books I have read, and has motivated me to work on projects to “automate the boring stuff”).&lt;/p&gt;
+
+&lt;p&gt;In this post, I will be talking about how to implement a Python Outlook Emailer bot in a Windows 7 environment to automate emailing subjects/volunteers using some cool Python libraries and techniques, and Google sheets.&lt;/p&gt;
+
+&lt;p&gt;The GitHub repo for this application will be located here: &lt;a href=&quot;https://github.com/k-chuang/automate-menial-tasks/blob/master/automate-outlook-emailer.py&quot;&gt;Python Outlook Emailer&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;python-libraries-used&quot;&gt;Python libraries used:&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/mhammond/pywin32&quot;&gt;pypiwin32&lt;/a&gt; - a Python library for Windows 32 extensions, which allows access to Windows API (used to interact with Microsoft Outlook)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://pypi.python.org/pypi/gsheets/0.3&quot;&gt;gsheets&lt;/a&gt; - a Python wrapper around the Google Sheets API&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://pandas.pydata.org/&quot;&gt;pandas&lt;/a&gt; - a super awesome library that makes working with data easy. It’s good for data manipulation and data analysis, and also creating easy to use data structures.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.python.org/2/library/re.html&quot;&gt;re&lt;/a&gt; - a Python library for regular expressions&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.python.org/2/library/threading.html&quot;&gt;threading&lt;/a&gt; - a Python library for threading&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;setting-up&quot;&gt;Setting up&lt;/h2&gt;
+
+&lt;p&gt;Python 2.7 was used, and the Python libraries and their versions are located in the requirements.txt file.&lt;/p&gt;
+
+&lt;p&gt;To install the necessary Python packages, run:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;pip install -r requirements.txt&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;I found a nice Python library called &lt;strong&gt;&lt;a href=&quot;https://github.com/bndr/pipreqs&quot;&gt;pipreqs&lt;/a&gt;&lt;/strong&gt; that automatically generates the requirements.txt file based on imports. You just run this simple command in your terminal:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;pipreqs /path/to/project&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;I should have used a virtual environment (either &lt;strong&gt;&lt;a href=&quot;https://virtualenv.pypa.io/en/stable/&quot;&gt;virtualenv&lt;/a&gt; &lt;/strong&gt;or &lt;strong&gt;&lt;a href=&quot;https://docs.pipenv.org/&quot;&gt;pipenv&lt;/a&gt;&lt;/strong&gt;) to set up the requirements.txt file for the required Python libraries, but this project was created before I knew about these concepts. However, I am definitely looking into using these tools to create an isolated Python environment for future projects.&lt;/p&gt;
+
+&lt;p&gt;Since we are using a Google form and a couple Google sheets, you will need an account on Google to create these forms and sheets. In addition, since we are using the Google Sheets API, you will need to visit the &lt;a href=&quot;https://console.developers.google.com&quot;&gt;Google Developer Console&lt;/a&gt; to generate the &lt;strong&gt;clients_secrets.json&lt;/strong&gt; and &lt;strong&gt;storage.json&lt;/strong&gt; file for authentication purposes. The &lt;a href=&quot;https://gsheets.readthedocs.io/en/stable/&quot;&gt;documentation for gsheets&lt;/a&gt; has an easy to understand way of setting this up (it’s under &lt;strong&gt;Quickstart&lt;/strong&gt; ). This step in authentication is necessary in order to use the Google Sheet API.&lt;/p&gt;
+
+&lt;p&gt;The Google form should have this format: &lt;a href=&quot;https://docs.google.com/forms/d/e/1FAIpQLScNaQrv1L-JAC6RaLAVSrXbhiiTcvTHM-q-zvUeWotelriUxA/viewform?usp=sf_link&quot;&gt;https://docs.google.com/forms/d/e/1FAIpQLScNaQrv1L-JAC6RaLAVSrXbhiiTcvTHM-q-zvUeWotelriUxA/viewform?usp=sf_link&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The Google sheets that the script will prompt for should be as follows:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Mailing list&lt;/strong&gt; : a Google sheet that contains a database of emails and user information that are on the mailing list. IMPORTANT: the 2nd column should be a column of emails.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Blacklisted emails&lt;/strong&gt; : a Google sheet with just one column of emails and nothing else. These are the emails you do not wish to email, and the script will take the necessary precautions to filter out these emails.&lt;/p&gt;
+
+&lt;h2 id=&quot;how-it-works&quot;&gt;How it works&lt;/h2&gt;
+
+&lt;p&gt;To avoid making this a long, convoluted step by step guide, I will just give a high level overview of how the script works, and a couple cool features within the script.&lt;/p&gt;
+
+&lt;p&gt;The Python script is an automated emailer that is meant to sign subjects up for an appointment to come in a fill out a survey. After users have filled out the survey, the Python script can be run again to send them a confirmation email with their appropriate appointment time and date. There are essentially two main steps to this script that happen sequentially. These steps do not necessarily have to be run sequentially. For example, if you already sent out the Google Form to people via some form of social media or ad posting, and have a filled out Google Sheet response to the form, then you can skip the first step.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;First step:&lt;/strong&gt;  To start, there is an &lt;em&gt;initial email&lt;/em&gt;, which emails subjects that are in a mailing list. The email will ask them if they are interested in participating in a survey, and if they are, to sign up for a time slot via a Google Form (Google Form format is located above). When running the script, the prompt will ask you whether or not you are emailing the mailing list (with input “i”), or confirming an email (with input “c”). You would want to type in the letter i to initiate the first step.&lt;/p&gt;
+
+&lt;p&gt;The script will then prompt you for other information, such as the url to the Google sheet containing the blacklist (if any), and the url to the Google sheet containing the mailing list. After you have successfully entered these two urls, the script will then prompt you to check the formatting of the email, and if you are satisfied with it. This is mainly to make sure the html body of the email is formatted correctly.&lt;/p&gt;
+
+&lt;p&gt;See &lt;a href=&quot;https://github.com/k-chuang/automate-menial-tasks/blob/master/html/initial_email.html&quot;&gt;initial_email.html&lt;/a&gt; for the correct formatting of the email body.&lt;/p&gt;
+
+&lt;p&gt;After you confirm that the email body is formatted correctly, the script will then prompt you again, and ask if you want to instantly send all emails, or oversee the sending of emails. Overseeing the emails will show you each email being sent with some time (5 seconds) in between sending each email. I recommend running in the oversee mode until you are familiar with the script.&lt;/p&gt;
+
+&lt;p&gt;All of the emails you have already sent will be recorded into the &lt;em&gt;already_emailed.txt&lt;/em&gt; file to prevent from emailing them again.&lt;/p&gt;
+
+&lt;p&gt;A cool feature that was implemented was a daemon thread function that will stop the sending of emails if you press any key. This threading function is a daemon thread that works in the background of the Python program, and is triggered by a user input of any key which then triggers the setting of a boolean flag. Based on the status of this flag (True or False), the program will stop and exit gracefully. Caveat: This only works in the overseeing mode.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Second step: &lt;/strong&gt; After some time or after you are satisfied with the number of subjects that have signed up for a time slot via the Google Form, the responses will be located in a Google Sheet with the correct format. Run the script again, and instead of inputting a letter i, type in the letter c, which means that you are sending a confirmation email to the subjects.&lt;/p&gt;
+
+&lt;p&gt;The script will prompt you for the url to the Google sheet to the blacklist again, to make sure you are not emailing people who have signed up for a time slot, and who are also on the blacklist of emails.&lt;/p&gt;
+
+&lt;p&gt;You will need a confirmation email template (&lt;a href=&quot;https://github.com/k-chuang/automate-menial-tasks/blob/master/html/confirmation_email_template.html&quot;&gt;confirmation_email_template.html&lt;/a&gt;), which will generate a confirmation email html body by replacing [DATE] and [TIME] with the associated date and time of a particular participant’s appointment. An example is shown in &lt;a href=&quot;https://github.com/k-chuang/automate-menial-tasks/blob/master/html/confirmation_email.html&quot;&gt;confirmation_email.html&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The emailer will then start sending emails in oversee mode, similar to the first step.&lt;/p&gt;
+
+&lt;p&gt;Again, like in the first step, you can stop the program by pressing any key, which will trigger the daemon thread to properly stop the program.&lt;/p&gt;
+
+&lt;p&gt;The person who runs the script should make sure to keep track of what users have been confirmed, by inserting a new column (called Emailed) in the Google Sheet Responses, to make sure they are not sending confirmation emails to people who have already been confirmed. Every batch of emails sent, you should mark an ‘x’ in each respective row to indicate that the subject has been emailed.&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;You are done!&lt;/p&gt;
+
+&lt;p&gt;This was a very high level overview of how the script works, but hopefully you guys have learned something from it. I do admit that there is a lot of setting up to do and the script could definitely be more automated. However, this does save a lot of time, effort, and manual labor in scheduling people by automating sending emails to a massive list of subjects.&lt;/p&gt;
+
+&lt;p&gt;Again, the GitHub repo for this application is located here: &lt;a href=&quot;https://github.com/k-chuang/automate-menial-tasks/blob/master/automate-outlook-emailer.py&quot;&gt;Python Outlook Emailer&lt;/a&gt;&lt;/p&gt;</content><author><name>Kevin Chuang</name></author><category term="Outlook Emailer" /><category term="Python" /><summary type="html">These next few blog posts were motivated by Automate the Boring Stuff by Al Sweigart, which I highly recommend reading (I haven’t personally finished the book yet, but it’s one of the first Python books I have read, and has motivated me to work on projects to “automate the boring stuff”).</summary></entry><entry><title type="html">Fixed my first bug this week~</title><link href="http://localhost:4000/2018/03/17/fixed-my-first-bug-this-week/" rel="alternate" type="text/html" title="Fixed my first bug this week~" /><published>2018-03-17T02:24:31-07:00</published><updated>2018-03-17T02:24:31-07:00</updated><id>http://localhost:4000/2018/03/17/fixed-my-first-bug-this-week</id><content type="html" xml:base="http://localhost:4000/2018/03/17/fixed-my-first-bug-this-week/">&lt;p&gt;I fixed my first software-related bug at work this week! Super proud of myself, and this blog post is dedicated to kind of how I did it using what I learned (on my own personal time).&lt;/p&gt;
+
+&lt;p&gt;I pushed the fix to &lt;strong&gt;gerrit&lt;/strong&gt; , a code review repository software that my work uses, and am waiting for feedback. I also wrote a couple more useful Python wrapper scripts that utilize some cool intermediate Python concepts that I recently learned.&lt;/p&gt;
+
+&lt;p&gt;Coming from a test engineer role, I typically report bugs and propose new potential features, and file these as &lt;strong&gt;JIRA&lt;/strong&gt; tickets. Due to other more important action items in the current sprint,  the developers that I work with did not have time to work on this issue; thus I took the initiative to fix this bug. Ironically, I had filed the &lt;strong&gt;JIRA&lt;/strong&gt; bug that I implemented the fix for.&lt;/p&gt;
+
+&lt;p&gt;I do want to note that this bug was also a blocker to one of the tasks I had to do, but I was also genuinely interested in fixing it and enhancing my programming skillset.&lt;/p&gt;
+
+&lt;p&gt;In the fix and in the wrapper Python scripts, I used some cool intermediate Python concepts, including:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;static methods&lt;/li&gt;
+  &lt;li&gt;generators&lt;/li&gt;
+  &lt;li&gt;recursion&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Also, I familiarized myself with &lt;strong&gt;git&lt;/strong&gt; and &lt;strong&gt;gerrit&lt;/strong&gt; , which is kind of a code review repository for collaboration among teams. I have a &lt;strong&gt;GitHub&lt;/strong&gt; , which is another type of code review repository, so I was semi-familiar with some basic git commands and functionality.&lt;/p&gt;
+
+&lt;p&gt;From some research I did this week, &lt;strong&gt;git&lt;/strong&gt; is a distributed version control tool for tracking changes in files/code/programs and for coordinating work on these files/code/programs among multiple developers, and &lt;strong&gt;gerrit&lt;/strong&gt; is built and integrated on top of git.&lt;/p&gt;
+
+&lt;p&gt;For more information about  &lt;strong&gt;gerrit&lt;/strong&gt; , check out the this  &lt;strong&gt;gerrit&lt;/strong&gt; documentation: &lt;a href=&quot;https://gerrit-review.googlesource.com/Documentation/intro-user.html&quot;&gt;https://gerrit-review.googlesource.com/Documentation/intro-user.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Some useful &lt;strong&gt;git&lt;/strong&gt; commands for me to remember are:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;git log&lt;/li&gt;
+  &lt;li&gt;git reflog&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Looks like the personal time I put in is actually paying off! Hopefully the code review goes well~&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;UPDATE (March 30, 2018)&lt;/strong&gt;: I received a +2 on the &lt;strong&gt;gerrit&lt;/strong&gt;  &lt;strong&gt;code review&lt;/strong&gt; , meaning my changes to the API were approved and merged! I also received compliments regarding how “beautiful” and well written the Python code was from the manager and a software engineer working under him. However, one of my other commits (with the wrapper Python scripts) was rejected (review label value of -2), since the manager suggested that I implement these wrapper scripts into the &lt;strong&gt;command line utility&lt;/strong&gt; , instead of separate Python wrapper scripts, which I quickly fixed. I implemented a recursion argument into the  &lt;strong&gt;command line utility&lt;/strong&gt; , and it is now one of the features of the API. That  &lt;strong&gt;patch set&lt;/strong&gt; with this new feature was also approved and merged into the API.&lt;/p&gt;
+
+&lt;p&gt;See here for more details regarding  &lt;strong&gt;gerrit code review &lt;/strong&gt; and the  &lt;strong&gt;review labels&lt;/strong&gt; : &lt;a href=&quot;https://gerrit-review.googlesource.com/Documentation/config-labels.html&quot;&gt;https://gerrit-review.googlesource.com/Documentation/config-labels.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;</content><author><name>Kevin Chuang</name></author><category term="CLI" /><category term="gerrit" /><category term="git" /><category term="JIRA" /><category term="Python" /><summary type="html">I fixed my first software-related bug at work this week! Super proud of myself, and this blog post is dedicated to kind of how I did it using what I learned (on my own personal time).</summary></entry><entry><title type="html">First Post!</title><link href="http://localhost:4000/2018/03/16/first-post/" rel="alternate" type="text/html" title="First Post!" /><published>2018-03-16T07:40:19-07:00</published><updated>2018-03-16T07:40:19-07:00</updated><id>http://localhost:4000/2018/03/16/first-post</id><content type="html" xml:base="http://localhost:4000/2018/03/16/first-post/">&lt;p&gt;Hello world! I’m Kevin! An aspiring software engineer and data scientist.&lt;/p&gt;
+
+&lt;p&gt;This blog will be dedicated to documenting my journey into data science and machine learning via personal data science and ML projects and much more!&lt;/p&gt;
+
+&lt;p&gt;My hobbies and interests:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;I love programming. Especially in Python, although I am not great at it (yet).&lt;/li&gt;
+  &lt;li&gt;I love writing, and am trying to get better (which is another reason I started this blog).&lt;/li&gt;
+  &lt;li&gt;I enjoy reading books and articles. Currently reading Malcom Gladwell’s David and Goliath!&lt;/li&gt;
+  &lt;li&gt;I enjoy listening to podcasts (such a lifesaver during my hour long commutes)
+    &lt;ul&gt;
+      &lt;li&gt;Some of the ones I’m listening to right now are:
+        &lt;ul&gt;
+          &lt;li&gt;Talk Python To Me with Michael Kennedy&lt;/li&gt;
+          &lt;li&gt;Stuff You Should Know with Josh Clark &amp;amp; Charles W. “Chuck” Bryant&lt;/li&gt;
+          &lt;li&gt;Freakonomics with Stephen J. Dubner&lt;/li&gt;
+          &lt;li&gt;Software Engineering Daily with Jeff Meyerson&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;I love learning and am always looking to learn and get better at things whether it be new programming languages/tools/frameworks or cooking.&lt;/li&gt;
+  &lt;li&gt;I love being active, such as working out, running, and playing basketball.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Just a couple things about me:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Currently a part time graduate student at SJSU, majoring in software engineering with a focus on data science&lt;/li&gt;
+  &lt;li&gt;Currently working as a test engineer (full time)&lt;/li&gt;
+  &lt;li&gt;Received my bachelor’s at UCSD for electrical engineering with a focus on machine learning.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Follow me on my social media, located on the left hand side (Facebook, Linkedin, and GitHub widgets), and if you want to know more about me (most of it is already in this post, but I will periodically update this page), check out my &lt;a href=&quot;https://kevinchuangblog.wordpress.com/about/&quot;&gt;About&lt;/a&gt; page!&lt;/p&gt;
+
+&lt;p&gt;To end, I just want to share a Python design principle that I hope to live (by live I probably mean program) by from the PEP 20 release called &lt;a href=&quot;https://www.python.org/dev/peps/pep-0020/&quot;&gt;The Zen of Python&lt;/a&gt;:&lt;/p&gt;
+
+&lt;h1 id=&quot;the-zen-of-python&quot;&gt;&lt;a href=&quot;https://www.python.org/dev/peps/pep-0020/#id3&quot;&gt;The Zen of Python&lt;/a&gt;&lt;/h1&gt;
+
+&lt;blockquote&gt;
+  &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Beautiful is better than ugly. Explicit is better than implicit. Simple is better than complex. Complex is better than complicated. Flat is better than nested. Sparse is better than dense. Readability counts. Special cases aren't special enough to break the rules. Although practicality beats purity. Errors should never pass silently. Unless explicitly silenced. In the face of ambiguity, refuse the temptation to guess. There should be one-- and preferably only one --obvious way to do it. Although that way may not be obvious at first unless you're Dutch. Now is better than never. Although never is often better than \*right\* now. If the implementation is hard to explain, it's a bad idea. If the implementation is easy to explain, it may be a good idea. Namespaces are one honking great idea -- let's do more of those!
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;  &lt;/div&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt; &lt;/p&gt;</content><author><name>Kevin Chuang</name></author><category term="About" /><summary type="html">Hello world! I’m Kevin! An aspiring software engineer and data scientist.</summary></entry></feed>

@@ -530,7 +530,7 @@ tr, td, th { vertical-align: middle; }
 
 /* ========================================================================== MASTHEAD ========================================================================== */
 .masthead { position: relative; border-bottom: 1px solid #f2f3f3; z-index: 20; }
-.masthead__inner-wrap { clear: both; margin-left: auto; margin-right: auto; padding: 1em; max-width: 100%; justify-content: space-between; font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif; }
+.masthead__inner-wrap { clear: both; margin-left: auto; margin-right: auto; padding: 1em; max-width: 100%; justify-content: space-between; font-family: "Lato", sans-serif; }
 .masthead__inner-wrap::after { clear: both; content: ""; display: table; }
 @media (min-width: 80em) { .masthead__inner-wrap { max-width: 1280px; } }
 .masthead__inner-wrap nav { z-index: 10; }
@@ -538,7 +538,7 @@ tr, td, th { vertical-align: middle; }
 
 .site-logo img { max-height: 2rem; }
 
-.site-title { font-weight: bold; font-size: 1.563em; color: #313436; z-index: 20; }
+.site-title { font-family: "Lato", sans-serif; font-style: italic; font-size: 1.953em; color: #313436; z-index: 20; }
 
 .site-subtitle { display: block; font-size: 0.625em; }
 
@@ -937,13 +937,13 @@ body { display: -webkit-box; display: -ms-flexbox; display: flex; min-height: 10
 .page .page__inner-wrap { float: left; margin-top: 1em; margin-left: 0; margin-right: 0; width: 100%; clear: both; }
 .page .page__inner-wrap .page__content, .page .page__inner-wrap .page__meta, .page .page__inner-wrap .comment__date, .page .page__inner-wrap .page__share { position: relative; float: left; margin-left: 0; margin-right: 0; width: 100%; clear: both; }
 
-.page__title { margin-top: 0; line-height: 1; }
+.page__title { margin-top: 0; line-height: 1; font-family: "Lato", sans-serif; font-size: 1.953em; color: black; }
 .page__title + .page__meta, .page__title + .comment__date { margin-top: -0.5em; }
 
-.page__lead { font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif; font-size: 1.25em; }
+.page__lead { font-family: "Lato", sans-serif; font-size: 1.953em; }
 
 .page__content { /* paragraph indents */ /* blockquote citations */ }
-.page__content h2 { padding-bottom: 0.5em; border-bottom: 1px solid #f2f3f3; }
+.page__content h2 { padding-bottom: 0; }
 .page__content h1 .header-link, .page__content h2 .header-link, .page__content h3 .header-link, .page__content h4 .header-link, .page__content h5 .header-link, .page__content h6 .header-link { position: relative; left: 0.5em; opacity: 0; font-size: 0.8em; -webkit-transition: opacity 0.2s ease-in-out 0.1s; -moz-transition: opacity 0.2s ease-in-out 0.1s; -o-transition: opacity 0.2s ease-in-out 0.1s; transition: opacity 0.2s ease-in-out 0.1s; }
 .page__content h1:hover .header-link, .page__content h2:hover .header-link, .page__content h3:hover .header-link, .page__content h4:hover .header-link, .page__content h5:hover .header-link, .page__content h6:hover .header-link { opacity: 1; }
 .page__content p, .page__content li, .page__content dl { font-size: 1em; }
@@ -955,17 +955,17 @@ body { display: -webkit-box; display: -ms-flexbox; display: flex; min-height: 10
 .page__content .small { font-size: 0.75em; }
 .page__content blockquote + .small { margin-top: -1.5em; padding-left: 1.25rem; }
 
-.page__hero { position: relative; margin-bottom: 2em; clear: both; -webkit-animation: intro 0.3s both; animation: intro 0.3s both; -webkit-animation-delay: 0.25s; animation-delay: 0.25s; }
+.page__hero { position: relative; margin-bottom: 0; clear: both; -webkit-animation: intro 0.3s both; animation: intro 0.3s both; -webkit-animation-delay: 0.25s; animation-delay: 0.25s; }
 .page__hero::after { clear: both; content: ""; display: table; }
-.page__hero--overlay { position: relative; margin-bottom: 2em; padding: 3em 0; clear: both; background-size: cover; background-repeat: no-repeat; background-position: center; -webkit-animation: intro 0.3s both; animation: intro 0.3s both; -webkit-animation-delay: 0.25s; animation-delay: 0.25s; }
+.page__hero--overlay { position: relative; margin-bottom: 0; padding: 3em 0; clear: both; background-size: cover; background-repeat: no-repeat; background-position: center; -webkit-animation: intro 0.3s both; animation: intro 0.3s both; -webkit-animation-delay: 0.25s; animation-delay: 0.25s; }
 .page__hero--overlay::after { clear: both; content: ""; display: table; }
 .page__hero--overlay a { color: #fff; }
 .page__hero--overlay .wrapper { padding-left: 1em; padding-right: 1em; }
 @media (min-width: 80em) { .page__hero--overlay .wrapper { max-width: 1280px; } }
 .page__hero--overlay .page__title, .page__hero--overlay .page__meta, .page__hero--overlay .comment__date, .page__hero--overlay .page__lead, .page__hero--overlay .btn, .page__hero--overlay #goog-wm-sb { color: #fff; text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5); }
 .page__hero--overlay .page__lead { max-width: 768px; }
-.page__hero--overlay .page__title { font-size: 1.953em; }
-@media (min-width: 37.5em) { .page__hero--overlay .page__title { font-size: 2.441em; } }
+.page__hero--overlay .page__title { font-family: "Lato", sans-serif; font-size: 1.953em; color: black; font-style: normal; }
+@media (min-width: 37.5em) { .page__hero--overlay .page__title { font-family: "Lato", sans-serif; font-size: 2.441em; font-style: normal; } }
 
 .page__hero-image { width: 100%; height: auto; -ms-interpolation-mode: bicubic; }
 
@@ -980,7 +980,7 @@ body { display: -webkit-box; display: -ms-flexbox; display: flex; min-height: 10
 .page__share-title { margin-bottom: 10px; font-size: 0.75em; text-transform: uppercase; }
 
 /* Page meta ========================================================================== */
-.page__meta, .comment__date { margin-top: 2em; color: #898c8f; font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif; font-size: 0.75em; }
+.page__meta, .comment__date { margin-top: 0.5em; color: #7a8288; font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif; font-size: 0.75em; }
 .page__meta p, .comment__date p { margin: 0; }
 .page__meta a, .comment__date a { color: inherit; }
 
@@ -990,7 +990,7 @@ body { display: -webkit-box; display: -ms-flexbox; display: flex; min-height: 10
 .page__taxonomy .sep { display: none; }
 .page__taxonomy strong { margin-right: 10px; }
 
-.page__taxonomy-item { display: inline-block; margin-right: 5px; margin-bottom: 8px; padding: 5px 10px; text-decoration: none; border: 1px solid #b6b6b6; border-radius: 4px; }
+.page__taxonomy-item { display: inline-block; margin-right: 5px; margin-bottom: 0; padding: 5px 10px; text-decoration: none; border: 1px solid #b6b6b6; border-radius: 4px; }
 .page__taxonomy-item:hover { text-decoration: none; color: #266477; }
 
 .taxonomy__section { margin-bottom: 2em; padding-bottom: 1em; }
@@ -1052,7 +1052,7 @@ body { display: -webkit-box; display: -ms-flexbox; display: flex; min-height: 10
 @media (min-width: 80em) { .wide .page__related { padding-right: 0; } }
 
 /* ========================================================================== ARCHIVE ========================================================================== */
-.archive { margin-top: 1em; margin-bottom: 2em; }
+.archive { margin-top: 0; margin-bottom: 0; }
 @media (min-width: 64em) { .archive { float: right; width: calc(100% - 200px); padding-right: 200px; } }
 @media (min-width: 80em) { .archive { width: calc(100% - 300px); padding-right: 300px; } }
 
@@ -1060,17 +1060,17 @@ body { display: -webkit-box; display: -ms-flexbox; display: flex; min-height: 10
 .archive__item a { position: relative; z-index: 10; }
 .archive__item a[rel="permalink"] { position: static; }
 
-.archive__subtitle { margin: 1.414em 0 0; padding-bottom: 0.5em; font-size: 1em; color: #898c8f; border-bottom: 1px solid #f2f3f3; }
+.archive__subtitle { margin: 0.5em 0 0; padding-bottom: 0.5em; font-family: "Lato", sans-serif; font-size: 1.563em; color: #313436; border-bottom: 1px solid #f2f3f3; }
 .archive__subtitle + .list__item .archive__item-title { margin-top: 0.5em; }
 
-.archive__item-title { margin-bottom: 0.25em; font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif; line-height: initial; overflow: hidden; text-overflow: ellipsis; }
+.archive__item-title { margin-bottom: 0.25em; font-family: "Lato", sans-serif; font-size: 1.25em; line-height: initial; overflow: hidden; text-overflow: ellipsis; }
 .archive__item-title a[rel="permalink"]::before { content: ''; position: absolute; left: 0; top: 0; right: 0; bottom: 0; }
 .archive__item-title a + a { opacity: 0.5; }
 
 /* remove border*/
-.page__content .archive__item-title { margin-top: 1em; border-bottom: none; }
+.page__content .archive__item-title { margin-top: 0; border-bottom: none; }
 
-.archive__item-excerpt { margin-top: 0; font-size: 0.75em; }
+.archive__item-excerpt { margin-top: 4px; margin-bottom: -20px; font-size: 1em; }
 .archive__item-excerpt + p { text-indent: 0; }
 .archive__item-excerpt a { position: relative; }
 
@@ -1082,7 +1082,7 @@ body { display: -webkit-box; display: -ms-flexbox; display: flex; min-height: 10
 .archive__item-caption a { color: #fff; text-decoration: none; }
 
 /* List view ========================================================================== */
-.list__item .page__meta, .list__item .comment__date { margin: 0 0 4px; font-size: 0.6em; }
+.list__item .page__meta, .list__item .comment__date { margin: 0 0 0 0; font-size: 0.6em; }
 
 /* Grid view ========================================================================== */
 .archive .grid__wrapper { /* extend grid elements to the right */ }
@@ -1099,7 +1099,7 @@ body { display: -webkit-box; display: -ms-flexbox; display: flex; min-height: 10
   .grid__item:nth-child(4n + 2) { clear: none; margin-left: 1.6949152542%; }
   .grid__item:nth-child(4n + 3) { clear: none; margin-left: 1.6949152542%; }
   .grid__item:nth-child(4n + 4) { clear: none; margin-left: 1.6949152542%; } }
-.grid__item .page__meta, .grid__item .comment__date { margin: 0 0 4px; font-size: 0.6em; }
+.grid__item .page__meta, .grid__item .comment__date { margin: 0 0 0; font-size: 0.6em; }
 .grid__item .archive__item-title { margin-top: 0.5em; font-size: 1em; }
 .grid__item .archive__item-excerpt { display: none; }
 @media (min-width: 48em) { .grid__item .archive__item-excerpt { display: block; font-size: 0.75em; } }
@@ -1188,12 +1188,12 @@ body { display: -webkit-box; display: -ms-flexbox; display: flex; min-height: 10
 .author__name { margin: 0; }
 @media (min-width: 64em) { .author__name { margin-top: 10px; margin-bottom: 10px; } }
 
-.sidebar .author__name { font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif; font-size: 1.563em; color: black; }
+.sidebar .author__name { font-family: "Lato", sans-serif; font-size: 1.563em; color: black; font-style: normal; }
 
-.author__bio { margin: 0; }
+.author__bio { margin: 0; font-family: "Lato", sans-serif; font-size: 1em; }
 @media (min-width: 64em) { .author__bio { margin-top: 10px; margin-bottom: 20px; } }
 
-.author__urls-wrapper { position: relative; display: table-cell; vertical-align: middle; font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif; z-index: 10; position: relative; cursor: pointer; }
+.author__urls-wrapper { position: relative; display: table-cell; vertical-align: middle; font-family: "Lato", sans-serif; z-index: 10; position: relative; cursor: pointer; }
 .author__urls-wrapper li:last-child a { margin-bottom: 0; }
 @media (min-width: 64em) { .author__urls-wrapper { display: block; } }
 .author__urls-wrapper button { margin-bottom: 0; }
@@ -1258,3 +1258,8 @@ body { display: -webkit-box; display: -ms-flexbox; display: flex; min-height: 10
   /* Hide the following elements on print ========================================================================== */
   .masthead, .toc, .page__share, .page__related, .pagination, .ads, .page__footer, .page__comments-form, .author__avatar, .author__content, .author__urls-wrapper, .nav__list, .sidebar, .adsbygoogle { display: none !important; height: 1px !important; } }
 .greedy-nav a { color: black; }
+
+html { /* apply a natural box layout model to all elements */ box-sizing: border-box; background-color: #fff; font-size: 14px; -webkit-text-size-adjust: 90%; -ms-text-size-adjust: 90%; }
+@media (min-width: 48em) { html { font-size: 16px; } }
+@media (min-width: 64em) { html { font-size: 18px; } }
+@media (min-width: 80em) { html { font-size: 20px; } }

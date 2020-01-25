@@ -29,9 +29,7 @@ meta:
   _wpcom_is_markdown: '1'
 permalink: "/2018/03/16/first-post/"
 ---
-Hello world! I'm Kevin! An aspiring software engineer and data scientist.
-
-This blog will be dedicated to documenting my journey into data science and machine learning via personal data science and ML projects and much more!
+Hello world! I'm Kevin! An aspiring software engineer and data scientist. This blog will be dedicated to documenting my journey into data science and machine learning via personal data science and ML projects and much more!
 
 My hobbies and interests:
 

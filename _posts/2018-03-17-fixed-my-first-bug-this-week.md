@@ -22,9 +22,7 @@ meta:
   _wpcom_is_markdown: '1'
 permalink: "/2018/03/17/fixed-my-first-bug-this-week/"
 ---
-I fixed my first software-related bug at work this week! Super proud of myself, and this blog post is dedicated to kind of how I did it using what I learned (on my own personal time).
-
-I pushed the fix to **gerrit** , a code review repository software that my work uses, and am waiting for feedback. I also wrote a couple more useful Python wrapper scripts that utilize some cool intermediate Python concepts that I recently learned.
+I fixed my first software-related bug at work this week! Super proud of myself, and this blog post is dedicated to kind of how I did it using what I learned (on my own personal time). I pushed the fix to **gerrit** , a code review repository software that my work uses, and am waiting for feedback. I also wrote a couple more useful Python wrapper scripts that utilize some cool intermediate Python concepts that I recently learned.
 
 Coming from a test engineer role, I typically report bugs and propose new potential features, and file these as **JIRA** tickets. Due to other more important action items in the current sprint,&nbsp; the developers that I work with did not have time to work on this issue; thus I took the initiative to fix this bug. Ironically, I had filed the **JIRA** bug that I implemented the fix for.
 

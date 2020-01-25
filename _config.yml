@@ -18,6 +18,7 @@ email: kevinchuang7@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Machine Learning Engineer @ CBS Interactive. Avid programmer, Data Scientist / Machine Learning Engineer, and AI Enthusiast.
   This website will contain my resume / CV as well as blog about my journey into software engineering, data science, and machine learning.
+url: "https://k-chuang.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 twitter_username: username
 github_username: k-chuang
 minimal_mistakes_skin: default
@@ -60,7 +61,7 @@ plugins:
 author:
   name      : "Kevin Chuang"
   avatar    : "/assets/images/ME.jpg"
-  bio       : "Machine Learning Engineer @ CBSi"
+  bio       : "Machine Learning Engineer"
   location  : "San Jose, California"
   links:
     - label: "GitHub"
@@ -74,16 +75,15 @@ author:
       url: "https://www.youtube.com/channel/UCumYWKxbe3sUZ6VkMNWcEuA"
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
-
+      url: "https://github.com/k-chuang"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/kevin-chuang/"
+    - label: "Youtube"
+      icon: "fab fa-fw fa-youtube"
+      url: "https://www.youtube.com/channel/UCumYWKxbe3sUZ6VkMNWcEuA"
 defaults:
   # _posts
   - scope:

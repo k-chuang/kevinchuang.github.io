@@ -22,9 +22,7 @@ meta:
   _publicize_job_id: '16741018740'
 permalink: "/2018/04/12/automate-the-menial-tasks-pt-2/"
 ---
-This is part 2 (and the final part) of the automating the menial tasks mini-series. I will be talking about using Python and Selenium to automate downloading audio files from a free audio database called [Freesound](https://freesound.org/).
-
-This was an old project that I had worked on when I was first getting into programming in Python. Recently, I revisited the code, since I remember it being such a cool and exciting project. I wanted to make it even better, so I spent some time refactoring the old, messy, and unPythonic code into a more understandable, clean CLI (Command Line Interface) application.
+This is part 2 (and the final part) of the automating the menial tasks mini-series. I will be talking about using Python and Selenium to automate downloading audio files from a free audio database called [Freesound](https://freesound.org/). This was an old project that I had worked on when I was first getting into programming in Python. Recently, I revisited the code, since I remember it being such a cool and exciting project. I wanted to make it even better, so I spent some time refactoring the old, messy, and unPythonic code into a more understandable, clean CLI (Command Line Interface) application.
 
 In addition to refactoring the code, I also started writing some unit tests and test cases to test the newly refactored code and the application as a whole. It was my first time writing unit tests and test cases for testing code, and it was such an awesome and fulfilling experience! I learned about a bunch of cool Python test frameworks and libraries ([pytest](https://docs.pytest.org/en/latest/), [pytest-cov](https://pytest-cov.readthedocs.io/en/latest/), [unittest](https://docs.python.org/2/library/unittest.html)), an open source, hosted continuous integration service called [travis-ci](http://travis-ci.org), and&nbsp;a coverage statistic web service that publishes and tracks your code coverage stats online called [coveralls.io](http://coveralls.io).
 

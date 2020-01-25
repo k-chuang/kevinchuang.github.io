@@ -19,9 +19,7 @@ meta:
   _wpcom_is_markdown: '1'
 permalink: "/2018/04/05/automate-the-menial-tasks-pt-1/"
 ---
-These next few blog posts were motivated by [Automate the Boring Stuff](https://automatetheboringstuff.com/)&nbsp;by&nbsp;Al Sweigart, which I highly recommend reading (I haven't personally finished the book yet, but it's one of the first Python books I have read, and has motivated me to work on projects to "automate the boring stuff").
-
-In this post, I will be talking about how to implement a Python Outlook Emailer bot in a Windows 7 environment to automate emailing subjects/volunteers using some cool Python libraries and techniques, and Google sheets.
+These next few blog posts were motivated by [Automate the Boring Stuff](https://automatetheboringstuff.com/)&nbsp;by&nbsp;Al Sweigart, which I highly recommend reading (I haven't personally finished the book yet, but it's one of the first Python books I have read, and has motivated me to work on projects to "automate the boring stuff"). In this post, I will be talking about how to implement a Python Outlook Emailer bot in a Windows 7 environment to automate emailing subjects/volunteers using some cool Python libraries and techniques, and Google sheets.
 
 The GitHub repo for this application will be located here: [Python Outlook Emailer](https://github.com/k-chuang/automate-menial-tasks/blob/master/automate-outlook-emailer.py)
 

@@ -1,6 +1,6 @@
 ---
 title: Resume / CV
-date: 2019-05-14 15:26:00.000000000 -07:00
+date: 2020-01-24 15:26:00.000000000 -07:00
 type: page
 parent_id: '0'
 published: true

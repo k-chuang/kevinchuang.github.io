@@ -1055,7 +1055,7 @@ body { display: -webkit-box; display: -ms-flexbox; display: flex; min-height: 10
 @media (min-width: 80em) { .wide .page__related { padding-right: 0; } }
 
 /* ========================================================================== ARCHIVE ========================================================================== */
-.archive { margin-top: 0; margin-bottom: 0; }
+.archive { margin-top: 1em; margin-bottom: 2em; }
 @media (min-width: 64em) { .archive { float: right; width: calc(100% - 200px); padding-right: 200px; } }
 @media (min-width: 80em) { .archive { width: calc(100% - 300px); padding-right: 300px; } }
 
@@ -1063,17 +1063,17 @@ body { display: -webkit-box; display: -ms-flexbox; display: flex; min-height: 10
 .archive__item a { position: relative; z-index: 10; }
 .archive__item a[rel="permalink"] { position: static; }
 
-.archive__subtitle { margin: 0.5em 0 0; padding-bottom: 0.5em; font-family: "Lato", sans-serif; font-size: 1.563em; color: #313436; border-bottom: 1px solid #E7E7E7; }
+.archive__subtitle { margin: 1.414em 0 0; padding-bottom: 0.5em; font-family: "Lato", sans-serif; font-size: 1.563em; color: #313436; border-bottom: 1px solid #E7E7E7; }
 .archive__subtitle + .list__item .archive__item-title { margin-top: 0.5em; }
 
-.archive__item-title { margin-bottom: 0.25em; font-family: "Lato", sans-serif; font-size: 1.25em; line-height: initial; overflow: hidden; text-overflow: ellipsis; }
+.archive__item-title { margin-bottom: 0.25em; font-family: "Lato", sans-serif; font-size: 1.35em; line-height: initial; overflow: hidden; text-overflow: ellipsis; }
 .archive__item-title a[rel="permalink"]::before { content: ''; position: absolute; left: 0; top: 0; right: 0; bottom: 0; }
 .archive__item-title a + a { opacity: 0.5; }
 
 /* remove border*/
 .page__content .archive__item-title { margin-top: 0; border-bottom: none; }
 
-.archive__item-excerpt { margin-top: 4px; margin-bottom: -20px; font-size: 1em; }
+.archive__item-excerpt { margin-top: 4px; margin-bottom: 0; font-size: 1em; }
 .archive__item-excerpt + p { text-indent: 0; }
 .archive__item-excerpt a { position: relative; }
 

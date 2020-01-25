@@ -10,6 +10,7 @@
   // -webkit-animation-delay: 0.15s;
   // animation-delay: 0.15s;
   z-index: 20;
+  background: $lighter-gray;
 
   &__inner-wrap {
     @include clearfix;
@@ -24,9 +25,10 @@
     // -ms-flex-pack: justify;
     justify-content: space-between;
     font-family: $lato;
-
+    background: $lighter-gray;
     @include breakpoint($x-large) {
       max-width: $max-width;
+      background: $lighter-gray;
     }
 
     nav {
@@ -52,9 +54,10 @@
   font-family: $lato;
   // font-weight: bold;
   font-style: italic;
-  font-size: $type-size-2;
+  font-size: $type-size-1-2;
   color: $darker-gray;
   z-index: 20;
+  background: $lighter-gray;
 }
 
 .site-subtitle {
@@ -68,10 +71,11 @@
   margin-right: 0;
   width: 100%;
   clear: both;
+  background: $lighter-gray;
 
   .site-nav {
     margin-left: 0;
-
+    background: $lighter-gray;
     @include breakpoint($small) {
       float: right;
     }
@@ -89,7 +93,7 @@
   display: block;
   list-style-type: none;
   white-space: nowrap;
-
+  background: $lighter-gray;
   &--lg {
     padding-right: 2em;
     font-weight: 700;

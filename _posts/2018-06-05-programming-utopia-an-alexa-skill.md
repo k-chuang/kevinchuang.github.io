@@ -23,8 +23,6 @@ meta:
   _thumbnail_id: '186'
 permalink: "/2018/06/05/programming-utopia-an-alexa-skill/"
 ---
-## Introduction
-
 According to the&nbsp;[World Health Organization](http://www.who.int/mediacentre/factsheets/fs369/en/), 350 million people worldwide suffer from depression. Depression is the leading cause of disability.
 
 > More than&nbsp;[16 million American adults](https://adaa.org/understanding-anxiety/depression), or 6.7% of the adult population, have experienced at least one major depressive episode in the last year.
@@ -33,7 +31,6 @@ According to the&nbsp;[World Health Organization](http://www.who.int/mediacentre
 
 Recently, there has been a spike in the rise of suicides in the United States. In the past week, two celebrities (Anthony Bourdain and Kate Spade) committed suicide due to depression. There is a need for more ways that victims of depression can get help. This is the motivation behind why I created Utopia.
 
-<!--more-->
 
 This blog post will be about a project I've been working on for the past couple of months. Using Python, some third party Python packages, and the Alexa Skills kit, I programmed [Utopia](https://github.com/k-chuang/utopia-alexa-skill), an Alexa skill that is designed to help people cope with depression.
 

@@ -107,7 +107,7 @@ img.mfp-img { width: auto; max-width: 100%; height: auto; display: block; line-h
 
 .mfp-bottom-bar { margin-top: -36px; position: absolute; top: 100%; left: 0; width: 100%; cursor: auto; }
 
-.mfp-title { text-align: left; line-height: 18px; color: #f3f3f3; word-wrap: break-word; padding-right: 36px; }
+.mfp-title { text-align: left; line-height: 18px; color: #313436; word-wrap: break-word; padding-right: 36px; }
 
 .mfp-image-holder .mfp-content { max-width: 100%; }
 
@@ -144,10 +144,10 @@ a:focus, button:focus { /* Default*/ outline: thin dotted #6f777d; /* Webkit*/ o
 /* ========================================================================== STYLE RESETS ========================================================================== */
 * { box-sizing: border-box; }
 
-html { /* apply a natural box layout model to all elements */ box-sizing: border-box; background-color: #fff; font-size: 16px; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
-@media (min-width: 48em) { html { font-size: 18px; } }
-@media (min-width: 64em) { html { font-size: 20px; } }
-@media (min-width: 80em) { html { font-size: 22px; } }
+html { /* apply a natural box layout model to all elements */ box-sizing: border-box; background-color: #fff; font-size: 14px; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+@media (min-width: 48em) { html { font-size: 16px; } }
+@media (min-width: 64em) { html { font-size: 18px; } }
+@media (min-width: 80em) { html { font-size: 20px; } }
 
 /* Remove margin */
 body { margin: 0; }
@@ -411,11 +411,6 @@ td { padding: 0.5em; border-bottom: 1px solid #b6b6b6; }
 
 tr, td, th { vertical-align: middle; }
 
-/* ========================================================================== ANIMATIONS ========================================================================== */
-@-webkit-keyframes intro { 0% { opacity: 0; }
-  100% { opacity: 1; } }
-@keyframes intro { 0% { opacity: 0; }
-  100% { opacity: 1; } }
 /* Components */
 /* ========================================================================== BUTTONS ========================================================================== */
 /* Default button ========================================================================== */
@@ -534,8 +529,8 @@ tr, td, th { vertical-align: middle; }
 .notice--danger ul:last-child { margin-bottom: 0; /* override*/ }
 
 /* ========================================================================== MASTHEAD ========================================================================== */
-.masthead { position: relative; border-bottom: 1px solid #f2f3f3; -webkit-animation: intro 0.3s both; animation: intro 0.3s both; -webkit-animation-delay: 0.15s; animation-delay: 0.15s; z-index: 20; }
-.masthead__inner-wrap { clear: both; margin-left: auto; margin-right: auto; padding: 1em; max-width: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif; }
+.masthead { position: relative; border-bottom: 1px solid #f2f3f3; z-index: 20; }
+.masthead__inner-wrap { clear: both; margin-left: auto; margin-right: auto; padding: 1em; max-width: 100%; justify-content: space-between; font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif; }
 .masthead__inner-wrap::after { clear: both; content: ""; display: table; }
 @media (min-width: 80em) { .masthead__inner-wrap { max-width: 1280px; } }
 .masthead__inner-wrap nav { z-index: 10; }
@@ -543,7 +538,7 @@ tr, td, th { vertical-align: middle; }
 
 .site-logo img { max-height: 2rem; }
 
-.site-title { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-item-align: center; align-self: center; font-weight: bold; z-index: 20; }
+.site-title { font-weight: bold; font-size: 1.563em; color: #313436; z-index: 20; }
 
 .site-subtitle { display: block; font-size: 0.625em; }
 
@@ -1161,8 +1156,7 @@ body { display: -webkit-box; display: -ms-flexbox; display: flex; min-height: 10
 .sidebar { clear: both; }
 .sidebar::after { clear: both; content: ""; display: table; }
 @media (max-width: 64em) { .sidebar { /* fix z-index order of follow links */ position: relative; z-index: 10; -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); } }
-@media (min-width: 64em) { .sidebar { float: left; width: calc(200px - 1em); opacity: 0.75; -webkit-transition: opacity 0.2s ease-in-out; transition: opacity 0.2s ease-in-out; }
-  .sidebar:hover { opacity: 1; }
+@media (min-width: 64em) { .sidebar { float: left; width: calc(200px - 1em); /* Does weird zoom thingy */ }
   .sidebar.sticky { overflow-y: auto; /* calculate height of nav list viewport height - nav height - masthead x-padding
 */ height: calc(100vh - 2em - 2em); } }
 @media (min-width: 80em) { .sidebar { width: calc(300px - 1em); } }
@@ -1182,9 +1176,9 @@ body { display: -webkit-box; display: -ms-flexbox; display: flex; min-height: 10
 @media (min-width: 80em) { .splash .sidebar__right { margin-right: 0; } }
 
 /* Author profile and links ========================================================================== */
-.author__avatar { display: table-cell; vertical-align: top; width: 36px; height: 36px; }
+.author__avatar { display: table-cell; vertical-align: top; width: 64px; height: 64px; }
 @media (min-width: 64em) { .author__avatar { display: block; width: auto; height: auto; } }
-.author__avatar img { max-width: 110px; border-radius: 50%; }
+.author__avatar img { max-width: 200px; border-radius: 50%; }
 @media (min-width: 64em) { .author__avatar img { padding: 5px; border: 1px solid #f2f3f3; } }
 
 .author__content { display: table-cell; vertical-align: top; padding-left: 15px; padding-right: 25px; line-height: 1; }
@@ -1194,7 +1188,7 @@ body { display: -webkit-box; display: -ms-flexbox; display: flex; min-height: 10
 .author__name { margin: 0; }
 @media (min-width: 64em) { .author__name { margin-top: 10px; margin-bottom: 10px; } }
 
-.sidebar .author__name { font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif; font-size: 1em; }
+.sidebar .author__name { font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif; font-size: 1.563em; color: black; }
 
 .author__bio { margin: 0; }
 @media (min-width: 64em) { .author__bio { margin-top: 10px; margin-bottom: 20px; } }
@@ -1263,3 +1257,4 @@ body { display: -webkit-box; display: -ms-flexbox; display: flex; min-height: 10
   .page__hero-caption a { color: #000 !important; }
   /* Hide the following elements on print ========================================================================== */
   .masthead, .toc, .page__share, .page__related, .pagination, .ads, .page__footer, .page__comments-form, .author__avatar, .author__content, .author__urls-wrapper, .nav__list, .sidebar, .adsbygoogle { display: none !important; height: 1px !important; } }
+.greedy-nav a { color: black; }

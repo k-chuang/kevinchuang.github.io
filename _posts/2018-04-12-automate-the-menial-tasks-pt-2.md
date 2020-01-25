@@ -22,8 +22,6 @@ meta:
   _publicize_job_id: '16741018740'
 permalink: "/2018/04/12/automate-the-menial-tasks-pt-2/"
 ---
-## Introduction
-
 This is part 2 (and the final part) of the automating the menial tasks mini-series. I will be talking about using Python and Selenium to automate downloading audio files from a free audio database called [Freesound](https://freesound.org/).
 
 This was an old project that I had worked on when I was first getting into programming in Python. Recently, I revisited the code, since I remember it being such a cool and exciting project. I wanted to make it even better, so I spent some time refactoring the old, messy, and unPythonic code into a more understandable, clean CLI (Command Line Interface) application.

@@ -61,7 +61,7 @@ plugins:
 
 author:
   name      : "Kevin Chuang"
-  avatar    : "/assets/images/ME.jpg"
+  avatar    : "/assets/images/bio.jpg"
   bio       : "Machine Learning Engineer"
   location  : "San Jose, California"
   links:

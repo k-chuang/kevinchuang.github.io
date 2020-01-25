@@ -945,8 +945,8 @@ body { display: -webkit-box; display: -ms-flexbox; display: flex; min-height: 10
 
 .page__lead { font-family: "Lato", sans-serif; font-size: 1.953em; }
 
-.page__content { /* paragraph indents */ /* blockquote citations */ }
-.page__content h2 { padding-bottom: 0; }
+.page__content { text-align: justify; /* paragraph indents */ /* blockquote citations */ }
+.page__content h2 { padding-bottom: 0; border-bottom: 1px solid #E7E7E7; }
 .page__content h1 .header-link, .page__content h2 .header-link, .page__content h3 .header-link, .page__content h4 .header-link, .page__content h5 .header-link, .page__content h6 .header-link { position: relative; left: 0.5em; opacity: 0; font-size: 0.8em; -webkit-transition: opacity 0.2s ease-in-out 0.1s; -moz-transition: opacity 0.2s ease-in-out 0.1s; -o-transition: opacity 0.2s ease-in-out 0.1s; transition: opacity 0.2s ease-in-out 0.1s; }
 .page__content h1:hover .header-link, .page__content h2:hover .header-link, .page__content h3:hover .header-link, .page__content h4:hover .header-link, .page__content h5:hover .header-link, .page__content h6:hover .header-link { opacity: 1; }
 .page__content p, .page__content li, .page__content dl { font-size: 1em; }

@@ -2,7 +2,7 @@ main:
   - title: "About"
     url: /about/
   - title: "Resume / CV"
-    url: /resume/
+    url: https://k-chuang.github.io/KevinChuangResume/
   # - title: "Blog"
   #   url: /posts/
   - title: "Categories"

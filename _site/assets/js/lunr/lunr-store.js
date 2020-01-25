@@ -30,7 +30,7 @@ var store = [{
         "url": "http://localhost:4000/2019/05/14/update-may-14-2019/",
         "teaser":null},{
         "title": "What I've Been Up To",
-        "excerpt":"Wow, it’s been while. Well, a lot has happened. I graduated with my Master’s in software engineering with a focus on Data Science at San Jose State University. Also, I’ll be working full-time as a ML Engineer at CBS Interactive. Here are a couple of things I’ve been working on...","categories": ["General","Automation","Continuous Integration"],
-        "tags": ["Travis CI","Jekyll","Github Pages","Overleaf"],
+        "excerpt":"Wow, it’s been while. Well, a lot has happened. I graduated with my Master’s in software engineering with a focus on Data Science at San Jose State University. Also, I’ll be working full-time as a ML Engineer at CBS Interactive. Here are a couple of things I’ve been working on...","categories": ["General","Automation","Continuous Integration","Microservices"],
+        "tags": ["Travis CI","Jekyll","Github Pages","Overleaf","Golang"],
         "url": "http://localhost:4000/2020/01/24/what-i've-been-up-to/",
         "teaser":null}]

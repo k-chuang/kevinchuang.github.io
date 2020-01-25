@@ -10,11 +10,13 @@ categories:
 - General
 - Automation
 - Continuous Integration
+- Microservices
 tags:
 - Travis CI
 - Jekyll
 - Github Pages
 - Overleaf
+- Golang
 meta:
   _wpcom_is_markdown: '1'
   _publicize_job_id: '30813365882'

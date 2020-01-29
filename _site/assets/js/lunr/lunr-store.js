@@ -24,11 +24,6 @@ var store = [{
         "tags": ["Alexa","Codecov","Python","Travis CI","Utopia"],
         "url": "http://localhost:4000/2018/06/05/programming-utopia-an-alexa-skill/",
         "teaser":null},{
-        "title": "Update - May 14, 2019",
-        "excerpt":"I haven’t posted in a while due to being busy with work and school. Here are some updates! I have added a new page on this blog for my resume. It is located here: Resume / CV. I have left my current job and have a Data Science internship for...","categories": ["General"],
-        "tags": [],
-        "url": "http://localhost:4000/2019/05/14/update-may-14-2019/",
-        "teaser":null},{
         "title": "What I've Been Up To",
         "excerpt":"Wow, it’s been while. Well, a lot has happened. I graduated with my Master’s in software engineering with a focus on Data Science at San Jose State University. Also, I’ll be working full-time as a ML Engineer at CBS Interactive. Here are a couple of things I’ve been working on...","categories": ["General","Automation","Continuous Integration","Microservices"],
         "tags": ["Travis CI","Jekyll","Github Pages","Overleaf","Golang"],

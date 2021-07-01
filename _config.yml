@@ -17,7 +17,7 @@ locale: "en-US"
 title: Not Enough Data
 email: kevinchuang7@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Machine Learning Engineer @ CBS Interactive. Avid programmer, Data Scientist / Machine Learning Engineer, and AI Enthusiast.
+  Data Engineer, Software Engineer and Data Enthusiast.
   This website will contain my resume / CV as well as blog about my journey into software engineering, data science, and machine learning.
 url: "https://k-chuang.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 twitter_username: username
@@ -62,10 +62,10 @@ plugins:
   - jekyll-include-cache
 
 author:
-  name      : "Kevin Chuang"
-  avatar    : "/assets/images/bio.jpg"
-  bio       : "Machine Learning Engineer"
-  location  : "San Jose, California"
+  name: "Kevin Chuang"
+  avatar: "/assets/images/bio.jpg"
+  bio: "Data Engineer"
+  location: "San Jose, California"
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
@@ -87,6 +87,9 @@ footer:
     - label: "Youtube"
       icon: "fab fa-fw fa-youtube"
       url: "https://www.youtube.com/channel/UCumYWKxbe3sUZ6VkMNWcEuA"
+collections:
+  drafts:
+    output: true
 defaults:
   # _posts
   - scope:
@@ -108,6 +111,18 @@ defaults:
       layout: single
       author_profile: true
       classes: wide
+  - scope:
+      path: ""
+      type: drafts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: false
+      share: false
+      related: false
+      sitemap: false #To hide from sitemap.xml
+      noindex: true #To hide from robots and crawlers
 
 category_archive:
   type: liquid

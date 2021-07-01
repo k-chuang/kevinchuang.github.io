@@ -16,4 +16,8 @@ author_profile: true
 permalink: "/about/"
 ---
 
-Hello world! I am currently a Machine Learning Engineer at CBS Interactive in the Applied Machine Learning Group, where I work on developing and productionizing ML services. I enjoy using data in clever ways to discover interesting insights and help make informed decisions. My interests include programming & automating things. The fields that interest me the most are data science, machine learning, and deep learning (Computer Vision, Natural Language Processing). To further this passion, I have actively pursued opportunities to learn and apply these concepts by working on personal projects, taking online and graduate courses, listening to AI-related podcasts, participating in AI challenges, and doing whatever I can to further my understanding of these fields. My hobbies include video editing, skateboarding, hanging out with friends, playing basketball and working out.
+Hello world! I currently work as a Data Engineer at HomeLight. I have a MS in software engineering with a specialization in data science at San Jose State University and a BS in electrical engineering with a focus on machine learning from University of California, San Diego.
+
+My interests include programming, building stuff, automating things, and working with data. The fields that interest me the most are software engineering, system design, data engineering, and data science / machine learning.
+
+My hobbies include programming, skateboarding, writing, video editing, photography, hanging out with friends, playing basketball and working out.

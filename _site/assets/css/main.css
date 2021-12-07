@@ -541,7 +541,7 @@ tr, td, th { vertical-align: middle; }
 
 .site-logo img { max-height: 2rem; }
 
-.site-title { font-family: "Lato", sans-serif; font-style: italic; font-size: 2.25em; color: #313436; z-index: 20; background: #E7E7E7; }
+.site-title { font-family: "Lato", sans-serif; font-size: 2.25em; color: #313436; z-index: 20; background: #E7E7E7; }
 
 .site-subtitle { display: block; font-size: 0.625em; }
 
@@ -940,7 +940,7 @@ body { display: -webkit-box; display: -ms-flexbox; display: flex; min-height: 10
 .page .page__inner-wrap { float: left; margin-top: 1em; margin-left: 0; margin-right: 0; width: 100%; clear: both; }
 .page .page__inner-wrap .page__content, .page .page__inner-wrap .page__meta, .page .page__inner-wrap .comment__date, .page .page__inner-wrap .page__share { position: relative; float: left; margin-left: 0; margin-right: 0; width: 100%; clear: both; }
 
-.page__title { margin-top: 0; line-height: 1; font-family: "Lato", sans-serif; font-size: 1.953em; color: black; }
+.page__title { margin-top: 0; line-height: 1; font-family: "Lato", sans-serif; font-size: 1.953em; color: black; font-style: normal; }
 .page__title + .page__meta, .page__title + .comment__date { margin-top: -0.5em; }
 
 .page__lead { font-family: "Lato", sans-serif; font-size: 1.953em; }
@@ -966,8 +966,7 @@ body { display: -webkit-box; display: -ms-flexbox; display: flex; min-height: 10
 .page__hero--overlay .wrapper { padding-left: 1em; padding-right: 1em; }
 @media (min-width: 80em) { .page__hero--overlay .wrapper { max-width: 1280px; } }
 .page__hero--overlay .page__title, .page__hero--overlay .page__meta, .page__hero--overlay .comment__date, .page__hero--overlay .page__lead, .page__hero--overlay .btn, .page__hero--overlay #goog-wm-sb { color: #fff; text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5); }
-.page__hero--overlay .page__lead { max-width: 768px; }
-.page__hero--overlay .page__title { font-family: "Lato", sans-serif; font-size: 1.953em; color: black; font-style: normal; }
+.page__hero--overlay .page__title { font-family: "Lato", sans-serif; font-size: 1.953em; color: white; font-style: normal; }
 @media (min-width: 37.5em) { .page__hero--overlay .page__title { font-family: "Lato", sans-serif; font-size: 2.441em; font-style: normal; } }
 
 .page__hero-image { width: 100%; height: auto; -ms-interpolation-mode: bicubic; }
@@ -1071,7 +1070,7 @@ body { display: -webkit-box; display: -ms-flexbox; display: flex; min-height: 10
 .archive__item-title a + a { opacity: 0.5; }
 
 /* remove border*/
-.page__content .archive__item-title { margin-top: 0; border-bottom: none; }
+.page__content .archive__item-title { margin-top: 0.5em; border-bottom: none; }
 
 .archive__item-excerpt { margin-top: 4px; margin-bottom: 2px; font-size: 1em; }
 .archive__item-excerpt + p { text-indent: 0; }

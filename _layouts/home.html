@@ -1,13 +1,12 @@
 ---
-layout: archive
+layout: default
 ---
 
 {{ content }}
 
-<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
+<body class="layout--single" style="background-color:#E7E7E7;">
+  <h1 id="page-title" class="page__title" itemprop="headline">TESTING</h1>
+  <!-- <p class="page__lead">Testing</p> -->
+</body>
 
-{% for post in paginator.posts %}
-  {% include archive-single.html %}
-{% endfor %}
 
-{% include paginator.html %}

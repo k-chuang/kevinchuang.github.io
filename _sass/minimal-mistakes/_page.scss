@@ -74,7 +74,7 @@ body {
   font-family: $lato;
   font-size: $type-size-2;
   color: black;
-  // font-style: italic;
+  font-style: normal;
 
   & + .page__meta {
     margin-top: -0.5em;
@@ -205,14 +205,14 @@ body {
       text-shadow: 1px 1px 4px rgba(#000, 0.5);
     }
 
-    .page__lead {
-      max-width: $medium;
-    }
+    // .page__lead {
+    //   max-width: $medium;
+    // }
 
     .page__title {
       font-family: $lato;
       font-size: $type-size-2;
-      color: black;
+      color: white;
       font-style: normal;
 
       @include breakpoint($small) {

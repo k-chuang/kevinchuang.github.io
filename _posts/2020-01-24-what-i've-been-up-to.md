@@ -8,9 +8,6 @@ password: ''
 status: publish
 categories:
 - General
-- Automation
-- Continuous Integration
-- Microservices
 tags:
 - Travis CI
 - Jekyll

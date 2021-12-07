@@ -7,7 +7,7 @@ published: true
 password: ''
 status: publish
 categories:
-- Alexa Skill
+- Projects
 tags:
 - Alexa
 - Codecov

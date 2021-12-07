@@ -7,18 +7,14 @@ published: true
 password: ''
 status: publish
 categories:
-- General
-- Automation
-- Container Orchestration
-- Microservices
-- Containers
-- Kubernetes
-- Helm
+- Technology
 tags:
 - Kubernetes
 - Containers
 - Docker
 - Helm
+- DevOps
+- Infrastructure
 meta:
   _wpcom_is_markdown: '1'
   _publicize_job_id: '30813365882'

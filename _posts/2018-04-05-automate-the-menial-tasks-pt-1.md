@@ -7,7 +7,7 @@ published: true
 password: ''
 status: publish
 categories:
-- Automation
+- Projects
 tags:
 - Outlook Emailer
 - Python

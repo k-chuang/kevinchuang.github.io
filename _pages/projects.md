@@ -22,6 +22,10 @@ author_profile: true
 - Ranked **1st** in book recommender system, **2nd** in traffic image classification, **3rd** in news article text clustering, and **5th** in medical text classification in the final leaderboard of data science competitions at SJSU
 - **Tools:** Python, scipy, pandas, numpy, seaborn, scikit-learn, surprise
 
+## [Save Sister Script]()
+- Wrote Python script to automatically check medical exam scheduling website and alert my sister via email when the earliest available medical exam time slot was available, resulting in a lot of saved time repeatedly manually refreshing the website and successfully getting her an early medical exam time slot (which she also successfully passed!)
+- **Tools**: Python, Selenium
+
 ## [Utopia Alexa Skill](https://github.com/k-chuang/utopia-alexa-skill)
 - Developed and launched a serverless Alexa skill to help people with depression
 - **Tools:** Python, Alexa Skills Kit, AWS Lambda, Travis CI, Codecov, pytest

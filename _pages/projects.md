@@ -14,6 +14,13 @@ author_profile: true
 
 ![text summarizer demo](/assets/images/tldr-extension-go-demo.gif)
 
+## [Understanding Emotional States from Body Language using Deep Learning]()
+- For SJSU Master's Project, collaborated with team to launch containerized deep learning model to recognize emotional states using face and body gestures
+- Focused on training, testing, deploying, and serving the deep learning model using Keras, Tensorflow, Tensorfow serving, Flask, Docker, opencv
+- **Tools:** Python, Flask, Keras, Tensorflow, Tensorflow serving, Docker, opencv
+
+![emotional states architecture](/assets/images/emotional_recognition_system_architecture.png)
+
 ## [Yet Another URL Shortener](https://github.com/nguyensjsu/fa19-281-team-red-1)
 - Collaborated with team in hackathoon to design & implement microservice architecture satisfying AKF Scale Cube with React.js frontend, Kong API Gateway, multiple load balancers, Golang API microservices, and MongoDB clusters hosted on AWS for shortening URLs with additional features like user profile and user history and most popular domains
 - **Tools:** Golang, AWS, MongoDB, React.js, Kong API Gateway, Docker
